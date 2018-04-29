@@ -43,7 +43,7 @@ def sample_eq_displacements(mean, std, n_eqs):
 # standard deviation, recurrence interval distribution, and simulation
 # length.
 def make_cum_slip(rec_mean, rec_std, distribution, yrs=10000,
-                  displacement_mean=1, displacement_std=0.5):
+                  displacement_mean=1, displacement_std=0.75):
     n_eqs = int(yrs / rec_mean) + 100
     
     eq_rec_times = np.int_(distribution(rec_mean, rec_std, n_eqs))
