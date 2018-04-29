@@ -588,7 +588,7 @@ in developing ideas or intuition about the behavior of a given fault.
 
 
 
-# Conclusions
+\conclusions
 
 This work seeks to evaluate the effect of natural variability (aleatoric 
 uncertainty) in earthquake recurrence intervals on slip rate measurements. The 
@@ -620,6 +620,13 @@ or techniques:
    slip rate for <5 mean earthquake cycles, but this fades with time. However, 
    the uncertainties remain asymmetric, with a strong right skew.
 
+
+
+\codeavailability{All code is available at 
+https://github.com/cossatot/eq-slip-rate-variability-paper with an MIT 
+license.}
+
+\competinginterests{The author declares no competing interests.}
 
 \begin{thebibliography}{}
 
