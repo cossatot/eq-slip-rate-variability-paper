@@ -463,14 +463,17 @@ ax70.axhline(1, color='k', lw=0.5)
 ax70.fill_between(eq_cycles, logn_1000_500_adj_arrays[5],
                              logn_1000_500_adj_arrays[95],
                   alpha=0.15, color='C0',
+                 label='5-95th pctile',
                  lw=0)
 
 ax70.fill_between(eq_cycles, logn_1000_500_adj_arrays[25],
                              logn_1000_500_adj_arrays[75],
                   alpha=0.5, color='C0',
+                 label='25-75th pctile',
                  lw=0)
 
-ax70.plot(eq_cycles, logn_1000_500_adj_arrays[50], 'C0-', lw=0.75)
+ax70.plot(eq_cycles, logn_1000_500_adj_arrays[50], 'C0-', lw=0.75, 
+          label='median')
 
 
 ax71.axhline(1, color='k', lw=0.5)
@@ -514,6 +517,8 @@ ax73.fill_between(eq_cycles, exp_1000_adj_arrays[25],
 
 ax73.plot(eq_cycles, exp_1000_adj_arrays[50], 'C3-', lw=0.75)
 
+
+ax70.legend(loc='upper right')
 
 ax72.set_ylabel('Epistemic uncertainty in rate measurement')
 ax73.set_xlabel('Mean number of earthquakes (or thousand years)')
