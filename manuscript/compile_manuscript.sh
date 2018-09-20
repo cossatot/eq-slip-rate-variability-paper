@@ -10,15 +10,18 @@ pandoc random_eq_slip_rate_variations.md --from markdown \
     --template=copernicus.template \
     --latex-engine=pdflatex \
     --filter pandoc-citeproc --bibliography=eq-cycle-slip-rate-paper.bib \
-    --csl=/Users/itchy/Zotero/styles/copernicus-publications.csl
+    --csl=/Users/itchy/Zotero/styles/copernicus-publications.csl \
+    --natbib \
+    --metadata link-citations=true
 
 
 elif [ "$OUT_TYPE" == "tex" ]; then
-pandoc random_eq_slip_rate_variations.md --from markdown \
+#pandoc random_eq_slip_rate_variations.md --from markdown \
+pandoc eq-slip-rate.md --from markdown \
     -o $OUTFILE_NAME$OUT_TYPE \
     --template=copernicus.template \
-    --filter pandoc-citeproc --bibliography=eq-cycle-slip-rate-paper.bib \
-    --csl=/Users/itchy/Zotero/styles/copernicus-publications.csl
+#    --filter pandoc-citeproc --bibliography=eq-cycle-slip-rate-paper.bib \
+#    --csl=/Users/itchy/Zotero/styles/copernicus-publications.csl
 
 elif [ "$OUT_TYPE" == "agu_tex" ]; then
 pandoc random_eq_slip_rate_variations.md --from markdown \

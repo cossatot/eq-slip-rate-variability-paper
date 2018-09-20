@@ -1,0 +1,213 @@
+\begin{thebibliography}{27}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Benedetti et~al.(2013)Benedetti, Manighetti, Gaudemer, Finkel,
+  Malavieille, Pou, Arnold, Aumaître, Bourlès, and
+  Keddadouche}]{benedetti_earthquake_2013}
+Benedetti, L., Manighetti, I., Gaudemer, Y., Finkel, R., Malavieille, J., Pou,
+  K., Arnold, M., Aumaître, G., Bourlès, D., and Keddadouche, K.: Earthquake
+  synchrony and clustering on {Fucino} faults ({Central} {Italy}) as revealed
+  from in situ 36Cl exposure dating, Journal of Geophysical Research: Solid
+  Earth, 118, 4948--4974, \doi{10.1002/jgrb.50299},
+  \urlprefix\url{http://onlinelibrary.wiley.com/doi/10.1002/jgrb.50299/abstract},
+  2013.
+
+\bibitem[{Berryman et~al.(2012)Berryman, Cochran, Clark, Biasi, Langridge, and
+  Villamor}]{berryman_major_2012}
+Berryman, K.~R., Cochran, U.~A., Clark, K.~J., Biasi, G.~P., Langridge, R.~M.,
+  and Villamor, P.: Major {Earthquakes} {Occur} {Regularly} on an {Isolated}
+  {Plate} {Boundary} {Fault}, Science, 336, 1690--1693,
+  \doi{10.1126/science.1218959},
+  \urlprefix\url{http://science.sciencemag.org.www2.lib.ku.edu/content/336/6089/1690},
+  2012.
+
+\bibitem[{Bird(2007)}]{bird_uncertainties_2007}
+Bird, P.: Uncertainties in long-term geologic offset rates of faults: {General}
+  principles illustrated with data from {California} and other western states,
+  Geosphere, 3, 577--595, 2007.
+
+\bibitem[{Clark et~al.(2012)Clark, McPherson, and
+  Van~Dissen}]{clark_long-term_2012}
+Clark, D., McPherson, A., and Van~Dissen, R.: Long-term behaviour of
+  {Australian} stable continental region ({SCR}) faults, Tectonophysics,
+  566-567, 1--30, \doi{10.1016/j.tecto.2012.07.004},
+  \urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0040195112004076},
+  2012.
+
+\bibitem[{Davis et~al.(1989)Davis, Jackson, and Kagan}]{davis_longer_1989}
+Davis, P.~M., Jackson, D.~D., and Kagan, Y.~Y.: The longer it has been since
+  the last earthquake, the longer the expected time till the next?, Bulletin of
+  the Seismological Society of America, 79, 1439--1456,
+  \urlprefix\url{http://www.bssaonline.org/content/79/5/1439.short}, 1989.
+
+\bibitem[{DiCaprio et~al.(2008)DiCaprio, Simons, Kenner, and
+  Williams}]{dicaprio_post-seismic_2008}
+DiCaprio, C.~J., Simons, M., Kenner, S.~J., and Williams, C.~A.: Post-seismic
+  reloading and temporal clustering on a single fault, Geophysical Journal
+  International, 172, 581--592, \doi{10.1111/j.1365-246X.2007.03622.x},
+  \urlprefix\url{https://academic.oup.com/gji/article/172/2/581/624589/Post-seismic-reloading-and-temporal-clustering-on},
+  2008.
+
+\bibitem[{Dolan et~al.(2007)Dolan, Bowman, and Sammis}]{dolan_long-range_2007}
+Dolan, J.~F., Bowman, D.~D., and Sammis, C.~G.: Long-range and long-term fault
+  interactions in {Southern} {California}, Geology, 35, 855,
+  \doi{10.1130/G23789A.1},
+  \urlprefix\url{https://pubs.geoscienceworld.org/geology/article/35/9/855-858/130003},
+  2007.
+
+\bibitem[{DuRoss(2008)}]{duross_holocene_2008}
+DuRoss, C.~B.: Holocene {Vertical} {Displacement} on the {Central} {Segments}
+  of the {Wasatch} {Fault} {Zone}, {Utah}, Bulletin of the Seismological
+  Society of America, 98, 2918--2933, \doi{10.1785/0120080119},
+  \urlprefix\url{https://pubs.geoscienceworld.org/bssa/article/98/6/2918-2933/342041},
+  2008.
+
+\bibitem[{Grant and Sieh(1994)}]{grant_paleoseismic_1994}
+Grant, L.~B. and Sieh, K.: Paleoseismic evidence of clustered earthquakes on
+  the {San} {Andreas} {Fault} in the {Carrizo} {Plain}, {California}, Journal
+  of Geophysical Research, 99, 6819, \doi{10.1029/94JB00125},
+  \urlprefix\url{http://doi.wiley.com/10.1029/94JB00125}, 1994.
+
+\bibitem[{Klinger et~al.(2011)Klinger, Etchebes, Tapponnier, and
+  Narteau}]{klinger_characteristic_2011}
+Klinger, Y., Etchebes, M., Tapponnier, P., and Narteau, C.: Characteristic slip
+  for five great earthquakes along the {Fuyun} fault in {China}, Nature
+  Geoscience, 4, 389--392, \doi{10.1038/ngeo1158},
+  \urlprefix\url{http://www.nature.com/doifinder/10.1038/ngeo1158}, 2011.
+
+\bibitem[{Leonard(2010)}]{leonard_earthquake_2010}
+Leonard, M.: Earthquake {Fault} {Scaling}: {Self}-{Consistent} {Relating} of
+  {Rupture} {Length}, {Width}, {Average} {Displacement}, and {Moment}
+  {Release}, Bulletin of the Seismological Society of America, 100, 1971--1988,
+  \doi{10.1785/0120090189},
+  \urlprefix\url{http://bssa.geoscienceworld.org.www2.lib.ku.edu/content/100/5A/1971},
+  2010.
+
+\bibitem[{Lifton et~al.(2015)Lifton, Frankel, and Newman}]{lifton_latest_2015}
+Lifton, Z.~M., Frankel, K.~L., and Newman, A.~V.: Latest {Pleistocene} and
+  {Holocene} slip rates on the {Lone} {Mountain} fault: {Evidence} for
+  accelerating slip in the {Silver} {Peak}-{Lone} {Mountain} extensional
+  complex, Tectonics, 34, 449--463, \doi{10.1002/2013TC003512},
+  \urlprefix\url{http://doi.wiley.com/10.1002/2013TC003512}, 2015.
+
+\bibitem[{Matthews et~al.(2002)Matthews, Ellsworth, and
+  Reasenberg}]{matthews_brownian_2002}
+Matthews, M.~V., Ellsworth, W.~L., and Reasenberg, P.~A.: A {Brownian} model
+  for recurrent earthquakes, Bulletin of the Seismological Society of America,
+  92, 2233--2250,
+  \urlprefix\url{http://www.bssaonline.org/content/92/6/2233.short}, 2002.
+
+\bibitem[{Ogata(1999)}]{ogata_estimating_1999}
+Ogata, Y.: Estimating the hazard of rupture using uncertain occurrence times of
+  paleoearthquakes, Journal of Geophysical Research: Solid Earth, 104,
+  17\,995--18\,014, \doi{10.1029/1999JB900115},
+  \urlprefix\url{https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/1999JB900115},
+  1999.
+
+\bibitem[{Rittase et~al.(2014)Rittase, Kirby, McDonald, Walker, Gosse, Spencer,
+  and Herrs}]{rittase_temporal_2014}
+Rittase, W.~M., Kirby, E., McDonald, E., Walker, J.~D., Gosse, J., Spencer, J.
+  Q.~G., and Herrs, A.~J.: Temporal variations in {Holocene} slip rate along
+  the central {Garlock} fault, {Pilot} {Knob} {Valley}, {California},
+  Lithosphere, 6, 48--58, \doi{10.1130/L286.1},
+  \urlprefix\url{https://pubs.geoscienceworld.org/gsa/lithosphere/article/6/1/48/145701/temporal-variations-in-holocene-slip-rate-along},
+  2014.
+
+\bibitem[{Rizza et~al.(2015)Rizza, Ritz, Prentice, Vassallo, Braucher,
+  Larroque, Arzhannikova, Arzhannikov, Mahan, Massault, Michelot, Todbileg, and
+  Team}]{rizza_earthquake_2015}
+Rizza, M., Ritz, J.-F., Prentice, C., Vassallo, R., Braucher, R., Larroque, C.,
+  Arzhannikova, A., Arzhannikov, S., Mahan, S., Massault, M., Michelot, J.-L.,
+  Todbileg, M., and Team, A.: Earthquake {Geology} of the {Bulnay} {Fault}
+  ({Mongolia}), Bulletin of the Seismological Society of America, 105, 72--93,
+  \doi{10.1785/0120140119},
+  \urlprefix\url{http://www.bssaonline.org/content/105/1/72}, 2015.
+
+\bibitem[{Roberts et~al.(2002)Roberts, Michetti, Cowie, Morewood, and
+  Papanikolaou}]{roberts_fault_2002}
+Roberts, G.~P., Michetti, A.~M., Cowie, P., Morewood, N.~C., and Papanikolaou,
+  I.: Fault slip-rate variations during crustal-scale strain localisation,
+  central {Italy}, Geophysical Research Letters, 29, 9--1--9--4,
+  \doi{10.1029/2001GL013529},
+  \urlprefix\url{http://doi.wiley.com/10.1029/2001GL013529}, 2002.
+
+\bibitem[{Scharer et~al.(2010)Scharer, Biasi, Weldon, and
+  Fumal}]{scharer_quasi-periodic_2010}
+Scharer, K.~M., Biasi, G.~P., Weldon, R.~J., and Fumal, T.~E.: Quasi-periodic
+  recurrence of large earthquakes on the southern {San} {Andreas} fault,
+  Geology, 38, 555--558,
+  \urlprefix\url{http://geology.gsapubs.org/content/38/6/555.short}, 2010.
+
+\bibitem[{Styron et~al.(2017)Styron, Sherrod, Scharer, Rao, Gee, and
+  Pagani}]{styron_survival_2017}
+Styron, R., Sherrod, B.~L., Scharer, K.~M., Rao, A., Gee, R., and Pagani, M.:
+  Survival in {Seattle}: {Magnitude} estimation, survival analysis, and hazard
+  and loss from {Puget} {Lowland} paleoearthquakes,
+  \urlprefix\url{http://rocksandwater.net/blog/2017/08/puget-sound-statistical-paleoseismology-usgs-2017/},
+  2017.
+
+\bibitem[{Tuttle(2002)}]{tuttle_earthquake_2002}
+Tuttle, M.~P.: The {Earthquake} {Potential} of the {New} {Madrid} {Seismic}
+  {Zone}, Bulletin of the Seismological Society of America, 92, 2080--2089,
+  \doi{10.1785/0120010227},
+  \urlprefix\url{https://pubs.geoscienceworld.org/bssa/article/92/6/2080-2089/102989},
+  2002.
+
+\bibitem[{Wallace(1987)}]{wallace_grouping_1987}
+Wallace, R.~E.: Grouping and migration of surface faulting and variations in
+  slip rates on faults in the {Great} {Basin} province, Bulletin of the
+  Seismological Society of America, 77, 868--876, 1987.
+
+\bibitem[{Weldon et~al.(2004)Weldon, Scharer, Fumal, and
+  Biasi}]{weldon_wrightwood_2004}
+Weldon, R., Scharer, K., Fumal, T., and Biasi, G.: Wrightwood and the
+  earthquake cycle: {What} a long recurrence record tells us about how faults
+  work, GSA Today, 14, 4, \doi{10.1130/1052-5173(2004)014<4:WATECW>2.0.CO;2},
+  \urlprefix\url{http://www.geosociety.org/gsatoday/archive/14/9/pdf/i1052-5173-14-9-4.pdf},
+  2004.
+
+\bibitem[{Wells and Coppersmith(1994)}]{wells_new_1994}
+Wells, D.~L. and Coppersmith, K.~J.: New empirical relationships among
+  magnitude, rupture length, rupture width, rupture area, and surface
+  displacement, Bulletin of the seismological Society of America, 84,
+  974--1002, \urlprefix\url{http://www.bssaonline.org/content/84/4/974.short},
+  1994.
+
+\bibitem[{Zechar and Frankel(2009)}]{zechar_incorporating_2009}
+Zechar, J.~D. and Frankel, K.~L.: Incorporating and reporting uncertainties in
+  fault slip rates, Journal of Geophysical Research, 114,
+  \doi{10.1029/2009JB006325},
+  \urlprefix\url{http://doi.wiley.com/10.1029/2009JB006325}, 2009.
+
+\bibitem[{Zielke(2018)}]{zielke_earthquake_2018}
+Zielke, O.: Earthquake {Recurrence} and the {Resolution} {Potential} of
+  {Tectono}‐{Geomorphic} {Records}, Bulletin of the Seismological Society of
+  America, \doi{10.1785/0120170241},
+  \urlprefix\url{https://pubs.geoscienceworld.org/ssa/bssa/article/530273/Earthquake-Recurrence-and-the-Resolution-Potential},
+  2018.
+
+\bibitem[{Zielke et~al.(2010)Zielke, Arrowsmith, Ludwig, and
+  Akciz}]{zielke_slip_2010}
+Zielke, O., Arrowsmith, J.~R., Ludwig, L.~G., and Akciz, S.~O.: Slip in the
+  1857 and {Earlier} {Large} {Earthquakes} {Along} the {Carrizo} {Plain}, {San}
+  {Andreas} {Fault}, Science, 327, 1119--1122, \doi{10.1126/science.1182781},
+  \urlprefix\url{http://www.sciencemag.org/cgi/doi/10.1126/science.1182781},
+  2010.
+
+\bibitem[{Zinke et~al.(2018)Zinke, Dolan, Rhodes, Van~Dissen, and
+  McGuire}]{zinke_highly_2018}
+Zinke, R., Dolan, J.~F., Rhodes, E.~J., Van~Dissen, R., and McGuire, C.~P.:
+  Highly {Variable} {Latest} {Pleistocene}-{Holocene} {Incremental} {Slip}
+  {Rates} on the {Awatere} {Fault} at {Saxton} {River}, {South} {Island}, {New}
+  {Zealand}, {Revealed} by {Lidar} {Mapping} and {Luminescence} {Dating},
+  Geophysical Research Letters, p. 2017GL075048, \doi{10.1002/2017GL075048},
+  \urlprefix\url{http://onlinelibrary.wiley.com/doi/10.1002/2017GL075048/abstract},
+  2018.
+
+\end{thebibliography}

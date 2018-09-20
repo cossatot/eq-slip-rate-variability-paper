@@ -1,5 +1,6 @@
 import numpy as np
 import scipy.stats as ss
+import pandas as pd
 
 # sampling functions
 def lognormal_scale(arith_mean, arith_var):
@@ -11,16 +12,21 @@ def lognormal_shape(arith_mean, arith_var):
 
 
 def lognormal(mean, std, n_eqs=0, return_pdf=False):
-    shape = lognormal_shape(mean, std**2)
-    scale = lognormal_scale(mean, std**2)
-    
-    _lognorm = ss.lognorm(shape,
-                          scale=np.exp(scale))
-    
-    if return_pdf == True:
-        return _lognorm
+
+    if std == 0:
+        return np.ones(n_eqs) * mean
     else:
-        return _lognorm.rvs(n_eqs)
+
+        shape = lognormal_shape(mean, std**2)
+        scale = lognormal_scale(mean, std**2)
+        
+        _lognorm = ss.lognorm(shape,
+                              scale=np.exp(scale))
+        
+        if return_pdf == True:
+            return _lognorm
+        else:
+            return _lognorm.rvs(n_eqs)
 
 
 def exponential(mean, std, n_eqs=0, return_pdf=False):
@@ -39,11 +45,19 @@ def sample_eq_displacements(mean, std, n_eqs):
     return lognormal(mean, std, n_eqs)
 
 
+
+def sample_eq_displacements_bw(n_eqs):
+    bw_df = pd.read_csv('./bw_2006_offsets.csv')
+
+    return np.random.choice(bw_df.Dn.values, n_eqs)
+
+
 # This function makes a cumulative slip history given a recurrence mean,
 # standard deviation, recurrence interval distribution, and simulation
 # length.
 def make_cum_slip(rec_mean, rec_std, distribution, yrs=10000,
-                  displacement_mean=1, displacement_std=0.75):
+                  displacement_mean=1, displacement_std=0.75,
+                  use_biasi_weldon=False):
     n_eqs = int(yrs / rec_mean) + 100
     
     eq_rec_times = np.int_(distribution(rec_mean, rec_std, n_eqs))
@@ -52,9 +66,12 @@ def make_cum_slip(rec_mean, rec_std, distribution, yrs=10000,
     n_eqs = len(eq_dates)
     eq_rec_times = eq_rec_times[:n_eqs]
     
-    eq_disps = sample_eq_displacements(displacement_mean,
-                                       displacement_std,
-                                       n_eqs)
+    if use_biasi_weldon is False:
+        eq_disps = sample_eq_displacements(displacement_mean,
+                                           displacement_std,
+                                           n_eqs)
+    else:
+        eq_disps = sample_eq_displacements_bw(n_eqs)
     
     eq_slip = np.zeros(yrs)
     
