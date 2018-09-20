@@ -153,21 +153,21 @@ earthquake is undefined, and no magnitude-frequency distribution exists.
 distributions}\label{earthquake-recurrence-interval-distributions}
 
 There are a handful of statistical models for earthquake recurrence
-interval distributions that are in widespread consideration.
+interval distributions that are under widespread consideration by the
+seismological community.
 
 The most commonly used is the \emph{exponential} distribution. This is
 associated with a Poisson process, and is the distribution that results
-from a prescribed number of earthquakes being distributed uniformly
-randomly within some time interval. Consequently, the probability of an
-earthquake (or other event) occurring at any time does not change with
-time since the previous event (in other words, the hazard function is
-time-invariant); this leads to the characterization of the exponential
-recurrence distribution as `random', `memoryless' or `time-independent'.
-The exponential distribution is also the simplest to describe
-statistically, as it requires only one parameter (the mean rate
-parameter), which is a statistical scale parameter. The standard
-deviation of a large number of samples generated from an exponential
-distribution is equal to the mean.
+from earthquakes being distributed uniformly randomly within some time interval.
+Consequently, the probability of an earthquake (or other event) occurring at any
+time does not change with time since the previous event (in other words, the
+hazard function is time-invariant); this leads to the characterization of the
+exponential recurrence distribution as `random', `memoryless' or
+`time-independent'. The exponential distribution is also the simplest to
+describe statistically, as it requires only one parameter (the mean rate
+parameter), which is a statistical scale parameter. The standard deviation of a
+large number of samples generated from an exponential distribution is equal to
+the mean.
 
 The other distributions that are in common usage are time-dependent
 distributions, meaning that the probability of an event occurring at any
@@ -274,12 +274,29 @@ distribution (Figure \ref{slip_dist}). This distribution is a lognormal
 distribution with \(\mu\) = 1 m and \(\sigma\) = 0.75 m, which produces
 essentially `characteristic' earthquakes that still nonetheless have
 some variability. This is representative of behavior observed in many
-studies \citep[e.g.]{zielke_slip_2010,klinger_characteristic_2011,zielke_earthquake_2018}. Taken together, the mean slip of 1 m and the
+studies \citep[e.g.]{zielke_slip_2010, klinger_characteristic_2011,
+  zielke_earthquake_2018}. Taken together, the mean slip of 1 m and the
 mean recurrence interval of 1000 years shared by each of the recurrence
 interval distributions yields a mean slip rate of 1 mm/yr. This rate is
 fairly typical for intraplate faults studied by paleoseismologists, and
 also allows for easy normalization so that the results of this study can
 be generalized to faults with different parameters.
+
+The choice of the lognormal distribution is for convenience, simplicity, and
+flexibility: it is a common, well-known distribution and--should one be
+interested--can be easily given different shape and scale values to modify the
+\(COV\) or change the mean slip rate in the modeling code used in this paper.
+However, it is not necessarily the most accurate representation of earthquake
+slip variability. **BIASI AND WELDON (2006)** compiled field measurements of
+surface ruptures from 13 earthquakes, and the resulting distribution has some
+significant differences with the lognormal distribution used here, though the
+\(COV\) of 0.67 is quite close to the value used here. To test the
+sensitivity of the results given in this paper to the choice of slip
+distribution, the numerical simulations in presented in this work were run with
+the only change being the use of the empirical slip distribution from **BIASI
+AND WELDON (2006)**, and the results are given in the supplemental material.
+Though there is more discussion there, the results are essentially identical to
+those presented below.
 
 \subsection{Stochastic displacement
 histories}\label{stochastic-displacement-histories}
