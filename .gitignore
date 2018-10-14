@@ -1,0 +1,9 @@
+._*
+.aux
+.blg
+.dvi
+.log
+.pyc
+
+.DS_Store
+

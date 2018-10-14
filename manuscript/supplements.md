@@ -10,14 +10,14 @@ header-includes: |
 
 This document contains the relevant results of two numerical experiments that
 are identical to those in the manuscript, except with somewhat different slip
-distributions. The first experiment uses an invariant slip of 1 m for each
-earthquake, to highlight the effects of the variation in earthquake timing on
-the results. The second experiment uses an empirical slip distribution from
+distributions. The first experiment uses an empirical slip distribution from
 *Biasi and Weldon* (*2006*) concatenated from 13 continental earthquakes and
 normalized to have a mean of 1 m. This is perhaps a more realistic slip
 distribution than the lognormal distribution used in the experiment in the
 manuscript, but as an empirical distribution it is limited to values that have
-been observed.
+been observed. The second experiment uses an invariant slip of 1 m for each
+earthquake, to highlight the effects of the variation in earthquake timing on
+the results. 
 
 Here, the figures showing the slip rate estimates are included; the setup
 (order, axes, symbology, etc.) of these figures are identical to Figure 5 in the
@@ -25,67 +25,6 @@ manuscript to allow for easy comparison of these results, which are the most
 important in the manuscript. Tables similar to Table 1 in the manuscript are
 also included, so that comparison of the 'numbers' can be done as well.
 
-## Simulations with invariant 1 m offsets
-
-The results from the simulation without slip variability (Figure 
-\ref{nsv_slip_rate_envelopes}, Table \ref{nsv_ep_unc_table}) are broadly similar
-to the results from the simulation in the manuscript. The differences are that
-*a*) the effects of the position in the earthquake cycle on the measured slip
-rate cycle are much more clear for up to about 7 events, and *b*) that the
-variation in slip measurements at any time $t$, and the convergence of the slip
-estimates, is a bit different. These are both the expected results of removing a
-source of stochasticity or 'noise' from the system. With regards to *a*, the
-'noise' from slip variability in the main experiment, which is uncorrelated with
-the variability in the earthquake recurrence time series, serves to smooth out
-the effects of the position within each early earthquake cycle. With regards to
-*b*, the variations in the slip rate estimates in this experiment at some time
-$t$ are a bit different than in the experiment in the manuscript: The total
-variability (as approximated by the 5th and 95th percentiles) is greater when
-slip variability is included (because there is more total stochasticity in the
-system) but these longer tails are thinner, and the central portion of the
-distributions (represented by the 25th, 50th, and 75th percentiles) are smoother
-and tighter, because of the smoothing effect of the slip variability.
-
-With increasing time and cumulative earthquakes, the slip rate estimates in this
-experiment smooth out, and the variation is less at all percentiles than the
-experiment in the manuscript; this is consistent with less stochasticity in the
-system.
-
-![figure \label{nsv_slip_rate_envelopes}](./figures/nsv_slip_rate_envelopes.pdf)
-
-
-\begin{table}[h!]
-\begin{tabular}{lllllll}
-\toprule
-distribution & $t$ &   5    &    25   &   50    &   75    &    95    \\
-\midrule
-logn\_0.5 & 2531  &  0.63 &  0.84 &  0.84 &  1.27 &   2.53 \\
-      & 4843  &  0.69 &  0.81 &  0.97 &  1.21 &   1.61 \\
-      & 10323 &  0.79 &  0.94 &  1.03 &  1.15 &   1.29 \\
-      & 42103 &   0.9 &  0.96 &     1 &  1.05 &   1.14 \\
-logn\_1 & 2531  &  0.51 &  0.63 &  0.84 &  1.27 &    $\infty$ \\
-      & 4843  &  0.61 &  0.81 &  0.97 &  1.21 &   2.42 \\
-      & 10323 &  0.69 &  0.79 &  0.94 &  1.15 &   2.06 \\
-      & 42103 &  0.81 &  0.88 &  0.96 &  1.05 &   1.32 \\
-logn\_2 & 2531  &  0.36 &  0.63 &  1.27 &   $\infty$ &    $\infty$ \\
-      & 4843  &  0.44 &  0.69 &  0.97 &  2.42 &    $\infty$ \\
-      & 10323 &  0.52 &  0.74 &  1.03 &  1.72 &  10.32 \\
-      & 42103 &  0.66 &  0.83 &     1 &  1.28 &   2.11 \\
-exp\_1 & 2531  &  0.51 &  0.63 &  1.27 &  2.53 &    $\infty$ \\
-      & 4843  &  0.54 &  0.81 &  0.97 &  1.61 &   2.42 \\
-      & 10323 &  0.65 &  0.79 &  1.03 &  1.15 &   1.72 \\
-      & 42103 &  0.77 &   0.9 &  0.98 &  1.08 &   1.24 \\
-\bottomrule
-\end{tabular}
-\caption{Epistemic uncertainty table for invariant 1 m slip distribution
-\label{nsv_ep_unc_table}}
-  \end{table}
-
-However, it is important to note that the differences between the results from
-this experiment and the experiment in the manuscript are minor. Perhaps most
-importantly, the relative differences between the recurrence distributions are
-maintained here, and the number of earthquakes required for the measured slip
-rates to stabilize are about the same.
 
 ## Simulations with empirical offset distribution
 
@@ -152,4 +91,64 @@ distribution \label{bw_ep_unc_table}}
   \end{table}
 
 
+## Simulations with invariant 1 m offsets
 
+The results from the simulation without slip variability (Figure 
+\ref{nsv_slip_rate_envelopes}, Table \ref{nsv_ep_unc_table}) are broadly similar
+to the results from the simulation in the manuscript. The differences are that
+*a*) the effects of the position in the earthquake cycle on the measured slip
+rate cycle are much more clear for up to about 7 events, and *b*) that the
+variation in slip measurements at any time $t$, and the convergence of the slip
+estimates, is a bit different. These are both the expected results of removing a
+source of stochasticity or 'noise' from the system. With regards to *a*, the
+'noise' from slip variability in the main experiment, which is uncorrelated with
+the variability in the earthquake recurrence time series, serves to smooth out
+the effects of the position within each early earthquake cycle. With regards to
+*b*, the variations in the slip rate estimates in this experiment at some time
+$t$ are a bit different than in the experiment in the manuscript: The total
+variability (as approximated by the 5th and 95th percentiles) is greater when
+slip variability is included (because there is more total stochasticity in the
+system) but these longer tails are thinner, and the central portion of the
+distributions (represented by the 25th, 50th, and 75th percentiles) are smoother
+and tighter, because of the smoothing effect of the slip variability.
+
+With increasing time and cumulative earthquakes, the slip rate estimates in this
+experiment smooth out, and the variation is less at all percentiles than the
+experiment in the manuscript; this is consistent with less stochasticity in the
+system.
+
+![figure \label{nsv_slip_rate_envelopes}](./figures/nsv_slip_rate_envelopes.pdf)
+
+
+\begin{table}[h!]
+\begin{tabular}{lllllll}
+\toprule
+distribution & $t$ &   5    &    25   &   50    &   75    &    95    \\
+\midrule
+logn\_0.5 & 2531  &  0.63 &  0.84 &  0.84 &  1.27 &   2.53 \\
+      & 4843  &  0.69 &  0.81 &  0.97 &  1.21 &   1.61 \\
+      & 10323 &  0.79 &  0.94 &  1.03 &  1.15 &   1.29 \\
+      & 42103 &   0.9 &  0.96 &     1 &  1.05 &   1.14 \\
+logn\_1 & 2531  &  0.51 &  0.63 &  0.84 &  1.27 &    $\infty$ \\
+      & 4843  &  0.61 &  0.81 &  0.97 &  1.21 &   2.42 \\
+      & 10323 &  0.69 &  0.79 &  0.94 &  1.15 &   2.06 \\
+      & 42103 &  0.81 &  0.88 &  0.96 &  1.05 &   1.32 \\
+logn\_2 & 2531  &  0.36 &  0.63 &  1.27 &   $\infty$ &    $\infty$ \\
+      & 4843  &  0.44 &  0.69 &  0.97 &  2.42 &    $\infty$ \\
+      & 10323 &  0.52 &  0.74 &  1.03 &  1.72 &  10.32 \\
+      & 42103 &  0.66 &  0.83 &     1 &  1.28 &   2.11 \\
+exp\_1 & 2531  &  0.51 &  0.63 &  1.27 &  2.53 &    $\infty$ \\
+      & 4843  &  0.54 &  0.81 &  0.97 &  1.61 &   2.42 \\
+      & 10323 &  0.65 &  0.79 &  1.03 &  1.15 &   1.72 \\
+      & 42103 &  0.77 &   0.9 &  0.98 &  1.08 &   1.24 \\
+\bottomrule
+\end{tabular}
+\caption{Epistemic uncertainty table for invariant 1 m slip distribution
+\label{nsv_ep_unc_table}}
+  \end{table}
+
+However, it is important to note that the differences between the results from
+this experiment and the experiment in the manuscript are minor. Perhaps most
+importantly, the relative differences between the recurrence distributions are
+maintained here, and the number of earthquakes required for the measured slip
+rates to stabilize are about the same.

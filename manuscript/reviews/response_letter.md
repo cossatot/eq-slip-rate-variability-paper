@@ -1,4 +1,4 @@
-# oskin
+ oskin
 
 > [O1] This paper presents a useful thought experiment on the impact of 
 > earthquake cycle variability on measured slip rates, and concludes that the 
@@ -12,7 +12,8 @@
 
 I performed this experiment; the figure with the slip rate results is shown
 below for comparison with Figure 5 in the paper, and are included in a new
-document in the supplemental material.
+document in the supplemental material. The most relevant figure is also shown
+here: 
 
 ![Figure \label{fig}](../figures/nsv_slip_rate_envelopes.pdf)
 
@@ -31,12 +32,9 @@ in the estimated slip rates show very clearly the mean earthquake cycles once
 the noise from the per-event displacements has been removed. It is clear that
 these are kind of damped or averaged out after ~7 earthquake cycles.
 Nonetheless, though this is a cool pattern to see, I don't think it adds
-enough insight to be worth including in the manuscript. If the reviewers and
-editor think it is still of some value, we can put it in the supplemental
-materials, but (as mentioned elsewhere) I prefer to keep the paper itself as
-streamlined as possible.
-
-**put table here.**
+enough insight to be worth including in the manuscript. I have added the figure
+and table that show the slip rate variation through time to a new supplemental
+document, accompanied by a brief discussion.
 
 > [O3] I would also like to a see a more quantitative comparison of COV and a 
 > convergence on the mean to back up the assertion that COV of the distribution 
@@ -49,9 +47,31 @@ This comment is addressed in the response to [O18] below.
 > discussion of physical processes that may drive such recurrence behavior.
 
 This paper is written to be a quick and clean demonstration of the effects of 
-recurrence (and slip) variability on slip rate estimations. I would prefer
+recurrence (and slip) variability on slip rate estimations. I want to keep the
+work as simple and as digestible as possible, for a few reasons:
 
+1. The intended audience for the paper is not only crustal deformation
+   researchers, but others in the seismic hazard community as well--this
+   includes engineers, geotechnical workers, analysts in the insurance industry,
+   etc. In my experience as a member of this community, many others are
+   only interested in these sorts of phenomena to the degree that they are
+   consequential and actionable; their intellectual interests are often oriented
+   towards their fields of expertise (structural engineering, ground motions,
+   human and economic exposure, etc.). I want this paper to be a straightforward
+   reference for how to evaluate slip rate data in light of aleatory variability
+   that is not tied down in jargon or linked to specific geological or
+   geophysical models or ideas that may not stand the test of time. Because of
+   how variable and poorly-understood earthquake recurrence and fault
+   interaction phenomena are, an in-depth discussion without resolution may well
+   be off-putting to much of the audience that I would like to read this paper.
 
+2. I don't believe that the state of the science is such that several paragraphs
+   to a page of discussion can summarize our (minimal) understanding of these
+   issues with any degree of satisfaction. Understanding earthquake recurrence
+   and fault interaction is a fascinating research topic, and it deserves either
+   a very full treatment (a review paper, lots of data analysis and modeling) or
+   simply a few references before the paper moves on. We are not at the stage
+   where we have a lot of answers, so it is very easy to get bogged down.
 
 > [O5] There is a literature of ideas to draw upon, such as post-seismic fault 
 > reloading (Kenner and Simons, 2005), earthquake super cycles (Sieh et al., 
@@ -59,13 +79,9 @@ recurrence (and slip) variability on slip rate estimations. I would prefer
 > al., 2012). Some of these ideas are discussed briefly but need more 
 > explanation.
 
-I don't think that a more in-depth discussion of these ideas is beneficial to 
-the goals of the paper. As stated in the response to [04], I am simply 
-demonstrating the effects of variability in the earthquake process to slip rate 
-studies. 
-
-It is clear that this variability exists. But it is not clear 
-
+I disagree. It is clear that this stochasticity exists in nature, but I don't
+think that we understand why. The modeling by Brad Hager's and Mark Simons'
+research groups 
 
 
 > [O6a] Likewise one could examine actual earthquake slip distributions (not 
@@ -84,14 +100,10 @@ distribution; the data are given as 1313 discrete points from earthquakes
 worldwide, normalized to the mean slip per event. I have sampled randomly from 
 this finite set, with replacement, instead of interpolating the set into a 
 continuous distribution and sampling from that. The results are in the new
-supplemental materials.
+supplemental materials (Figures S1 and S2, Table S1, and some discussion).
 
-The results are very similar to the results in the original manuscript. The 
-5-95% interval is slightly narrower than 
+The results are nearly indistinguishable.
 
-
-
-These 
 
 > [O6b] Some of the scatter in slip distributions is likely due to 
 > underreported measurement uncertainty (Gold et al., 2013), and thus the 
@@ -292,31 +304,39 @@ slip by 10 and the slip rate by 3). It's not accidental.
 
 
 
-Upon reflection this basically comes out of the mathematical definition of 
-standard error:
-
-
-
-
 
 > [O19] Page 5, line 29. This problem has been studied (Weldon et al., 2004; 
 > Sieh et al., 2008). The Sumatran subduction zone work is particularly 
 > relevant and completely overlooked here.
 
-The work by Weldon et al. (2004) is referenced on Page 6, Line 3.
-Neither of these papers deal with the of autocorrelated recurrence intervals in 
-any quantitative or otherwise explicit manner. One can read both papers and not 
-get a sense of whether a short recurrence interval implies the next recurrence 
-interval will be short or long. Both papers deal with the concept of 
-'earthquake supercycles' but these are not defined in any quantitative sense.
-
-
+The work by Weldon et al. (2004) is referenced on Page 6, Line 3. Neither of
+these papers deal with the topic of autocorrelated recurrence intervals in any
+quantitative or otherwise explicit manner, and I don't read anything that I can
+interpret as a qualitative discussion either. One can read both papers and not
+get a sense of whether a short recurrence interval implies the next recurrence
+interval will be short or long, much less any quantification. Both papers deal
+with the concept of 'earthquake supercycles' or groups of earthquakes that are
+relatively tightly-spaced and separated from other groups by long recurrence
+intervals. This may share a conceptual link, but from a technical perspective
+this likely has more to do with periodicity than autocorrelation, and these are
+mathematically separate such that a periodic sequence may have positive or
+negative autocorrelation. Goh and Barabasi (2008, Europhysics Letters) is a
+useful discussion on the topic of autocorrelation vs. periodicity in regards to
+quantifying clustering behavior (though one may safely ignore the references to
+seismicity in that paper).
 
 [Note: I've analyzed Weldon's data (from K. Scharer's refined OxCal earthquake 
 dates) and found that earthquake recurrence interval duration at the Wrightwood 
 and Pallett Creek sites has a negative autocorrelation, i.e. a short recurrence 
 interval is likely to be followed by a long recurrence interval, and vice 
-versa. This is quite unlike the autocorrelation in , 
+versa. This is quite unlike the autocorrelation in the Puget Lowlands of
+Washington State, which is more like a network of generally similar faults
+instead of an isolated or dominant plate boundary fault like the SAF or the
+Alpine Fault as referenced in another comment on Kelvin Berryman's work, where a
+long recurrence interval will more likely be followed by another long recurrence
+interval. I don't know what this means, or whether it's all noise, but it's
+intriguing to me and I put this bit in the paper in hopes of catching the
+attention of others who may be looking for a project.]
 
 
 > [O20] Page 6, line 1. Zero friction at rupture arrest is very unrealistic, 
@@ -324,7 +344,8 @@ versa. This is quite unlike the autocorrelation in ,
 
 It is not a necessary condition but it is a sufficient one, when coupled with 
 fairly regular reloading and failure conditions. I personally think it's 
-unlikely as well, but zero (or very near zero) friction is part and parcel with 
-complete stress drop in major earthquakes, which is supported by many studies 
-[REFS]. Furthermore, there are a host of laboratory experiments which suggest 
-that friction during slip decreases to very low values [MORE REFS]. 
+unlikely as well (see Styron and Hetland 2015 for example), but zero (or very
+near zero) friction is part and parcel with complete stress drop in major
+earthquakes, which is supported by many studies [REFS]. Furthermore, there are a
+host of laboratory experiments which suggest that friction during slip decreases
+to very low values [MORE REFS].

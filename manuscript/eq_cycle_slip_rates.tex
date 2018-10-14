@@ -63,7 +63,7 @@ changes over time.
 \introduction
 
 Fault slip rates are generally estimated by dividing measurements of the
-offset of geologic `marker' features by the time over which that offset
+offset of geologic marker features by the time over which that offset
 accumulated. The uncertainty in the resulting slip estimate is typically
 treated as \emph{epistemic}, and quantified through the propagation of
 the measurement uncertainties on the offset and time quantities
@@ -112,10 +112,40 @@ identical in each earthquake \citep[e.g.]{duross_holocene_2008}.
 Therefore, the measured slip rate may deviate from the time-averaged
 rate based on the amount of natural variability in the earthquake cycle,
 particularly given successive events from the tails of the recurrence
-interval or displacement distributions. Though the physical mechanisms
+interval or displacement distributions.
+
+The physical mechanisms responsible for the aleatoric variability in earthquake
+recurrence intervals and displacements are still unclear, and the subject of
+active investigation. Most earthquakes serve to release differential stresses
+caused by relative motions of tectonic plates or smaller crustal blocks;
+relative plate velocities measured over tens of thousands to millions of years
+from geologic reconstructions are similar enough to those measured over a few
+years through GPS geodesy that sudden, transient accelerations and decelerations
+are unlikely (e.g., **DEMETS AND DIXON 1999**). As a consequence, some plate
+boundary faults are among the most regularly-rupturing faults known,
+particularly sections that are isolated from nearby faults
+\citep[e.g.]{berryman_major_2012} and therefore not affected by stress
+perturbations resulting from earthquakes on other faults. These stress changes
+may be 'static' coseismic instantaneous stresses in the elastic upper crust resulting from
+earthquake displacement, or analogous stress changes in the viscoelastic lower
+crust or upper mantle from the time-dependent relaxation of static stress
+perturbations, or 'dynamic' transient stress changes that accompany the passage
+of seismic waves from nearby or distant earthquakes. Regardless of the nature
+
+Intraplate faults 
+
+It is important to keep in mind that each earthquake in a sequence places
+points of rock on both sides of the fault that were not previously in contact.
+
+
+
+
+Though the physical mechanisms
 responsible and the statistical character of this natural variability
 remain under debate, its effects on the estimated slip rates may still
-be estimated given some common parameterizations.
+be estimated given some common parameterizations. 
+
+
 
 In this study, the effects of the natural variability in earthquake
 recurrence intervals and per-event displacements on neotectonic slip
@@ -140,10 +170,11 @@ presented, representing the natural variability in this quantity.
 To isolate the effects of the earthquake cycle from other phenomena that
 may affect slip rate estimates, this study does not attempt to model
 erosion, nor does it consider any measurement uncertainty in the age or
-offset of the faulted geologic markers; these measurements are assumed
-to be perfect. Additionally, though natural variability in
+offset of the faulted geologic markers; these quantities are assumed
+to be perfectly known. Additionally, though natural variability in
 per-earthquake displacement is included in the model, it is minor and
-the same for all recurrence distributions. Furthermore, though the model
+the same for all recurrence distributions; though it is a random variable in the
+simulations, it is not an experimental variable. Furthermore, though the model
 has one length dimension (fault offset), it is still best thought of as
 a point (0-dimensional) model, as there is no spatial reference or
 along-strike or down-dip variability, and hence the magnitude of each
@@ -286,17 +317,27 @@ The choice of the lognormal distribution is for convenience, simplicity, and
 flexibility: it is a common, well-known distribution and--should one be
 interested--can be easily given different shape and scale values to modify the
 \(COV\) or change the mean slip rate in the modeling code used in this paper.
+
 However, it is not necessarily the most accurate representation of earthquake
 slip variability. **BIASI AND WELDON (2006)** compiled field measurements of
-surface ruptures from 13 earthquakes, and the resulting distribution has some
-significant differences with the lognormal distribution used here, though the
-\(COV\) of 0.67 is quite close to the value used here. To test the
+surface ruptures from 13 earthquakes. The resulting distribution (Figure S1) has
+some significant differences with the lognormal distribution used here, though
+the \(COV\) of 0.67 is quite close to the value used here. To test the
 sensitivity of the results given in this paper to the choice of slip
 distribution, the numerical simulations in presented in this work were run with
 the only change being the use of the empirical slip distribution from **BIASI
-AND WELDON (2006)**, and the results are given in the supplemental material.
-Though there is more discussion there, the results are essentially identical to
-those presented below.
+AND WELDON (2006)**, and the results are given in the supplemental material
+(Figure S2, Table S1). Though there is more discussion in the supplements, the
+results are essentially identical to those presented below. As an additional
+experiment, the numerical simulations have been run using an invariant per-event
+displacement of 1 m. Though this is not a realistic scenario, it allows for a
+deconvolution of the effects of earthquake time stochasticity and earthquake
+displacement stochasticity. The results are shown in Figure S3 and Table S2, and
+discussed in the supplemental materials; there are noticeable differences in the
+results, but they are small and do not call into question the results and
+conclusions presented below.
+
+
 
 \subsection{Stochastic displacement
 histories}\label{stochastic-displacement-histories}
@@ -463,12 +504,12 @@ is 0.2 times the simulated fault. For a fault with \(R=1\) mm/yr and
 is 2.5 times as long as in these simulations, so \(NF=2.5\) and the
 timescales for rate stabilization will be lengthened that much.
 
-This normalization will obviously be more accurate if \(\bar{D}\) and
-\(R\) are independently (and accurately) known or can be obtained from
-other information. \(\bar{D}\) may be estimated paleoseismologically or
-through the application of scaling relationships between fault length
-and offset \citep{wells_new_1994,leonard_earthquake_2010}. The accuracy of \(\hat{R}\) is discussed
-below, but suffice it for now to state that for more than
+This normalization will obviously be more accurate if \(\bar{D}\) and \(R\) are
+independently (and accurately) known or can be obtained from other information.
+\(\bar{D}\) may be estimated paleoseismologically or through the application of
+scaling relationships between fault length and offset
+\citep{wells_new_1994,leonard_earthquake_2010}. The accuracy of \(\hat{R}\) is
+discussed below, but suffice it for now to state that for more than
 \textasciitilde{}10 earthquakes, \(\hat{R}\) should be acceptable.
 
 \section{Discussion}\label{discussion}
