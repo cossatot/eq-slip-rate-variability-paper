@@ -23,7 +23,7 @@ Room 254, Lawrence, KS 66054 USA}
 \maketitle
 
 \begin{abstract}
-Because of the natural variability (aleatoric uncertainty) in earthquake
+Because of the natural (aleatoric) variability in earthquake
 recurrence intervals and coseismic displacements on a fault, cumulative
 slip on a fault does not increase linearly or perfectly step-wise with
 time; instead, some amount of variability in shorter-term slip rates
@@ -38,20 +38,21 @@ measurement windows is calculated for all faults through Monte Carlo
 simulations. The recurrence distributions used are quasi-periodic,
 unclustered and clustered lognormal distributions, and an unclustered
 exponential distribution. The results demonstrate that the most
-important parameter is the coefficient of variation (\(COV\) = standard
+important parameter is the coefficient of variation (\(CV\) = standard
 deviation / mean) of the recurrence distributions rather than the shape
 of the distribution itself. Slip rate variability over short time scales
-(\textless{} 10,000 years or 10 mean earthquake cycles) is quite high,
+(\textless{} 5,000 years or 5 mean earthquake cycles) is quite high, varying by 
+    a factor of 3 or more from the mean,
 but decreases with time and is close to stable after
 \textasciitilde{}40,000 years (40 mean earthquake cycles). This
 variability is higher for recurrence distributions with a higher
-\(COV\). The natural variability in the slip rate estimates compared to
+\(CV\). The natural variability in the slip rate estimates compared to
 the true value is then used to estimate the epistemic uncertainty in a
 single slip rate measurement (as one would make in a geological study)
 in the absence of any measurement uncertainty. This epistemic
 uncertainty is very high (a factor of 2 or more) for measurement windows
 of a few mean earthquake cycles (as in a paleoseismic slip rate
-estimate), but decreases rapidly to a factor of 1-2 with \textgreater{}5
+estimate), but decreases rapidly to a factor of 1—2 with \textgreater{}5
 mean earthquake cycles (as in a neotectonic slip rate study). These
 uncertainties are independent of, and should be propagated with
 uncertainties in fault displacement and geochronologic measurements used
@@ -67,10 +68,12 @@ offset of geologic marker features by the time over which that offset
 accumulated. The uncertainty in the resulting slip estimate is typically
 treated as \emph{epistemic}, and quantified through the propagation of
 the measurement uncertainties on the offset and time quantities
-\citep[e.g.]{bird_uncertainties_2007,zechar_incorporating_2009}.
+\citep[e.g.,][]{bird_uncertainties_2007,zechar_incorporating_2009}.
 However, for slip rate estimates on active faults made from offset
 measurements near the fault trace (i.e., within a horizontal distance
-that is a small fraction of the fault's locking depth), the episodic
+that is a small fraction of the fault's locking depth, as the width of the zone 
+affected by earthquake-cycle strains is a function of locking depth 
+\citep[e.g.,][]{savage_geodetic_1973, hetland_interseismic_2006}), the episodic
 nature of surface displacement due to the earthquake cycle will
 necessarily affect the results: If the measurements are taken
 immediately before an earthquake, the measured offset and resulting slip
@@ -80,78 +83,77 @@ higher.
 
 The magnitude of the perturbation to the slip rate is, of course, a
 function of the number of cumulative earthquakes that have contributed
-to the measured offset. For older Quaternary markers that have
-experienced tens to hundreds of major earthquakes, the effects will be
-minor, and for bedrock geologic markers with kilometers of displacement,
-the earthquake cycle is likely not worth accounting for. However, due to
-progressive erosion of geologic markers and the challenge of dating many
-late Pliocene to early Quaternary units (which are too old for
-radiocarbon and many cosmogenic nuclide systems), geologists often have
-no choice but to choose late Pleistocene to Holocene markers to date,
-and these units may also be more desirable targets if the scientists are
-primarily concerned with estimating the contemporary slip rate on a
-fault with a slip rate that may vary over Quaternary timescales
-\citep[e.g.]{rittase_temporal_2014,zinke_highly_2018}. For slow-moving
-faults, the slip either long waiting to be released, or recently
-released, may represent a sizeable fraction of the measured fault
-offset.
+to the measured offset (plus any aseismic strain such as afterslip or creep).
+For older Quaternary markers that have experienced tens to hundreds of major
+earthquakes, the effects will be minor, and for bedrock geologic markers with
+kilometers of displacement, the earthquake cycle is likely not worth accounting
+for. However, due to progressive erosion of geologic markers and the challenge
+of dating many late Pliocene to early Quaternary units (which are too old for
+radiocarbon and many cosmogenic nuclide systems), geologists often have no
+choice but to choose late Pleistocene to Holocene markers to date. These
+units may also be more desirable targets if the scientists are primarily
+concerned with estimating the contemporary slip rate on a fault with a slip
+rate that may vary over Quaternary timescales
+\citep[e.g.,][]{rittase_temporal_2014,zinke_highly_2018}. For slow-moving 
+faults, the slip either long waiting to be released, or recently released, may 
+represent a sizeable fraction of the measured fault offset.
 
 Careful paleoseismologists and neotectonicists will take this into
 account in their slip rate calculations if sufficient data are
 available, especially in the years after a major earthquake
-\citep[e.g.]{rizza_earthquake_2015}, and many others will discuss the
-potential effects if the data are not \citep[e.g.]{lifton_latest_2015}.
+\citep[e.g.,][]{rizza_earthquake_2015}, and many others will discuss the
+potential effects if the data are not \citep[e.g.,][]{lifton_latest_2015}.
 These workers may only consider the time since the last earthquake,
 often making the assumption (stated or not) that the earthquakes are
 identical in slip and perfectly periodic.
 
 However, the recurrence intervals between successive earthquakes on any
-given fault segment have some natural variability (i.e. \emph{aleatoric
-uncertainty}); similarly, displacement at a measured point is not
-identical in each earthquake \citep[e.g.]{duross_holocene_2008}.
+given fault segment have some natural (i.e. \emph{aleatoric})
+variability; similarly, displacement at a measured point is not
+identical in each earthquake \citep[e.g.,][]{duross_holocene_2008}.
 Therefore, the measured slip rate may deviate from the time-averaged
 rate based on the amount of natural variability in the earthquake cycle,
 particularly given successive events from the tails of the recurrence
 interval or displacement distributions.
 
-The physical mechanisms responsible for the aleatoric variability in earthquake
-recurrence intervals and displacements are still unclear, and the subject of
-active investigation. Most earthquakes serve to release differential stresses
-caused by relative motions of tectonic plates or smaller crustal blocks;
-relative plate velocities measured over tens of thousands to millions of years
-from geologic reconstructions are similar enough to those measured over a few
-years through GPS geodesy that sudden, transient accelerations and decelerations
-are unlikely (e.g., **DEMETS AND DIXON 1999**). As a consequence, some plate
-boundary faults are among the most regularly-rupturing faults known,
-particularly sections that are isolated from nearby faults
-\citep[e.g.]{berryman_major_2012} and therefore not affected by stress
-perturbations resulting from earthquakes on other faults. These stress changes
-may be 'static' coseismic instantaneous stresses in the elastic upper crust resulting from
-earthquake displacement, or analogous stress changes in the viscoelastic lower
-crust or upper mantle from the time-dependent relaxation of static stress
-perturbations, or 'dynamic' transient stress changes that accompany the passage
-of seismic waves from nearby or distant earthquakes. Regardless of the nature
+The physical mechanisms responsible for the aleatoric variability in earthquake 
+recurrence intervals and displacements are still unclear, and the subject of 
+active investigation. Most earthquakes serve to release differential stresses 
+caused by relative motions of tectonic plates or smaller crustal blocks; 
+relative plate velocities measured over tens of thousands to millions of years 
+from geologic reconstructions are similar enough to those measured over a few 
+years through GPS geodesy that sudden, transient accelerations and 
+decelerations are unlikely \citep[e.g.,][]{demets_new_1999}. As a consequence, 
+plate boundary faults may have near-constant rates of loading from tectonic 
+stress. Many plate boundary faults are are among the most regularly-rupturing 
+faults known, particularly sections that are isolated from nearby faults 
+\citep[e.g.,][]{berryman_major_2012} and therefore not affected by stress 
+perturbations resulting from earthquakes on other faults. 
 
-Intraplate faults 
+These stress perturbations may be `static' coseismic instantaneous stresses in 
+the elastic upper crust resulting from earthquake displacement 
+\citep{king_static_1994}, or analogous post-seismic stress changes in the 
+viscoelastic lower crust or upper mantle from the time-dependent relaxation of 
+static stress perturbations \citep[e.g.,][]{chery_postseismic_2001}, or 
+`dynamic' transient stress changes that accompany the passage of seismic waves 
+from nearby or distant earthquakes \citep{gomberg_dynamic_2005}.  Additionally, 
+changes in pore fluid pressure in a fault zone may increase or decrease the 
+required shear stress to initiate an earthquake 
+\citep{steacy_introduction_2005}. In contrast to isolated plate boundary 
+faults, intraplate faults or those on distributed plate boundaries may have 
+lower stress accumulation rates and the stress perturbations from activity on 
+other faults may be enough to significantly affect the timing of earthquakes on 
+a given fault \citep{gomberg_time-dependent_2005}. 
 
-It is important to keep in mind that each earthquake in a sequence places
-points of rock on both sides of the fault that were not previously in contact.
-
-
-
-
-Though the physical mechanisms
-responsible and the statistical character of this natural variability
-remain under debate, its effects on the estimated slip rates may still
-be estimated given some common parameterizations. 
-
-
+Though the physical mechanisms responsible and the statistical character of 
+this natural variability remain under debate, its effects on the estimated slip 
+rates may still be estimated given some common parameterizations.
 
 In this study, the effects of the natural variability in earthquake
 recurrence intervals and per-event displacements on neotectonic slip
 rate estimates are investigated through Monte Carlo simulations. The
 study is geared towards providing useful heuristic bounds on the
-aleatoric and epistemic uncertainty of late Quaternary slip rate
+aleatoric variability and epistemic uncertainty of late Quaternary slip rate
 estimates for fault geologists, probabilistic seismic hazard modelers,
 and others for whom such uncertainties are important.
 
@@ -196,9 +198,12 @@ hazard function is time-invariant); this leads to the characterization of the
 exponential recurrence distribution as `random', `memoryless' or
 `time-independent'. The exponential distribution is also the simplest to
 describe statistically, as it requires only one parameter (the mean rate
-parameter), which is a statistical scale parameter. The standard deviation of a
-large number of samples generated from an exponential distribution is equal to
-the mean.
+parameter), which is the inverse of the statistical scale parameter (the scale 
+parameter of a distribution determines the dispersion of the distribution, 
+while the shape parameter determines the shape or form of the distribution; a 
+parameter that shifts the distribution along the $x$-axis is called a location 
+parameter).  The standard deviation of a large number of samples generated from 
+an exponential distribution is equal to the mean.
 
 The other distributions that are in common usage are time-dependent
 distributions, meaning that the probability of an event occurring at any
@@ -221,18 +226,20 @@ characterized by the regularity of the spacing between events (i.e.~the
 recurrence intervals): these may be periodic, unclustered (i.e.,
 `random'), or clustered. Assignment into these categories is typically
 done with a parameter known as the coefficient of variation, or
-\(COV = \sigma / \mu\), where \(\sigma\) is the standard deviation of
+\(CV = \sigma / \mu\), where \(\sigma\) is the standard deviation of
 the recurrence intervals, and \(\mu\) is the mean recurrence interval.
 
 Periodic earthquakes are those that occur more regularly than random,
-and have a \(COV < 1\) (i.e. \(\sigma < \mu\)). These may be generated
+and have a \(CV < 1\) (i.e. \(\sigma < \mu\)). These may be generated
 by any of the time-dependent distributions described above with suitable
 scale and shape parameters. (Note that in this paper, the use of the
 term `periodic' does not mean \emph{perfectly} repeating as it might in
-the physics or mathematics literature.)
+the physics or mathematics literature; the behavior referred to is most 
+accurately termed `quasi-periodic', but that term will not be used in the 
+interests of conciseness.)
 
 Unclustered earthquakes occur as regularly as random, and have a
-\(COV=1\). These may be generated by the exponential distribution (which
+\(CV=1\). These may be generated by the exponential distribution (which
 can generate no other), or by any of the time-dependent distributions as
 well, given the appropriate parameters. Note that sample sets generated
 from these different distributions will not be identical, however:
@@ -245,7 +252,7 @@ the standard deviations will be equal. A comparison of these may be seen
 in Figure \ref{eq_rec_dists}.
 
 Clustered earthquake sequences have sets of very tightly spaced
-earthquakes that are widely separated, and have a \(COV>1\). These may
+earthquakes that are widely separated, and have a \(CV>1\). These may
 be generated from a hyperexponential distribution, which is the sum of
 multiple exponentials with different means, or from the time-dependent
 distributions given above, given the right parameters.
@@ -256,10 +263,10 @@ with propriety, the safest and probably most correct assumption is that
 it is context-dependent. Many studies of plate boundary faults such as
 the San Andreas conclude that major or `characteristic' earthquakes are
 periodic\\
-\citep[e.g.]{berryman_major_2012,scharer_quasi-periodic_2010}.
+\citep[e.g.,][]{berryman_major_2012,scharer_quasi-periodic_2010}.
 Conversely, many intraplate faults with low slip rates appear to show
 clustered earthquakes separated by long intervals of seismic quiescence
-\citep[e.g.]{clark_long-term_2012}. However, one can find examples of
+\citep[e.g.,][]{clark_long-term_2012}. However, one can find examples of
 studies indicating the opposite conclusions
 \citep{tuttle_earthquake_2002,grant_paleoseismic_1994}.
 
@@ -274,27 +281,27 @@ This study will compare four recurrence interval distributions (Figure
 \item
   A \emph{periodic} distribution, represented by a lognormal
   distribution with a mean recurrence interval \(\mu\) = 1000 years, and
-  a standard deviation \(\sigma\) = 500 years, and a \(COV\) = 0.5.
+  a standard deviation \(\sigma\) = 500 years, and a \(CV\) = 0.5.
 \item
   An \emph{unclustered} time-dependent distribution, represented by a
   lognormal distribution with a mean recurrence interval \(\mu\) = 1000
-  years, a standard deviation \(\sigma\) = 1000 years, and a \(COV\) =
+  years, a standard deviation \(\sigma\) = 1000 years, and a \(CV\) =
   1.0.
 \item
   An \emph{clustered} time-dependent distribution, represented by a
   lognormal distribution with a mean recurrence interval \(\mu\) = 1000
-  years, a standard deviation \(\sigma\) = 2000 years, and a \(COV\) =
+  years, a standard deviation \(\sigma\) = 2000 years, and a \(CV\) =
   2.0.
 \item
   An \emph{unclustered} time-independent distribution, represented by an
   exponential distribution with a mean recurrence interval \(\mu\) =
   1000 years, a standard deviation \(\sigma\) = 1000 years, and a
-  \(COV\) = 1.0.
+  \(CV\) = 1.0.
 \end{enumerate}
 
 These distributions have been selected to represent a diversity of
 behaviors with a compact and tractable number of simulations, and
-particularly to explore how changes in \(COV\) as well as the shape of
+particularly to explore how changes in \(CV\) as well as the shape of
 the distribution impact slip rate estimates.
 
 \subsubsection{Earthquake slip
@@ -305,8 +312,8 @@ distribution (Figure \ref{slip_dist}). This distribution is a lognormal
 distribution with \(\mu\) = 1 m and \(\sigma\) = 0.75 m, which produces
 essentially `characteristic' earthquakes that still nonetheless have
 some variability. This is representative of behavior observed in many
-studies \citep[e.g.]{zielke_slip_2010, klinger_characteristic_2011,
-  zielke_earthquake_2018}. Taken together, the mean slip of 1 m and the
+studies \citep[e.g.,][]{zielke_slip_2010, klinger_characteristic_2011,
+zielke_earthquake_2018}. Taken together, the mean slip of 1 m and the
 mean recurrence interval of 1000 years shared by each of the recurrence
 interval distributions yields a mean slip rate of 1 mm/yr. This rate is
 fairly typical for intraplate faults studied by paleoseismologists, and
@@ -316,26 +323,26 @@ be generalized to faults with different parameters.
 The choice of the lognormal distribution is for convenience, simplicity, and
 flexibility: it is a common, well-known distribution and--should one be
 interested--can be easily given different shape and scale values to modify the
-\(COV\) or change the mean slip rate in the modeling code used in this paper.
+\(CV\) or change the mean slip rate in the modeling code used in this paper.
 
 However, it is not necessarily the most accurate representation of earthquake
-slip variability. **BIASI AND WELDON (2006)** compiled field measurements of
+slip variability. \citet{biasi_estimating_2006} compiled field measurements of
 surface ruptures from 13 earthquakes. The resulting distribution (Figure S1) has
 some significant differences with the lognormal distribution used here, though
-the \(COV\) of 0.67 is quite close to the value used here. To test the
+the \(CV\) of 0.67 is quite close to the value used here. To test the
 sensitivity of the results given in this paper to the choice of slip
 distribution, the numerical simulations in presented in this work were run with
-the only change being the use of the empirical slip distribution from **BIASI
-AND WELDON (2006)**, and the results are given in the supplemental material
-(Figure S2, Table S1). Though there is more discussion in the supplements, the
-results are essentially identical to those presented below. As an additional
-experiment, the numerical simulations have been run using an invariant per-event
-displacement of 1 m. Though this is not a realistic scenario, it allows for a
-deconvolution of the effects of earthquake time stochasticity and earthquake
-displacement stochasticity. The results are shown in Figure S3 and Table S2, and
-discussed in the supplemental materials; there are noticeable differences in the
-results, but they are small and do not call into question the results and
-conclusions presented below.
+the only change being the use of the empirical slip distribution from 
+\citet{biasi_estimating_2006}, and the results are given in the supplemental 
+material (Figure S2, Table S1). Though there is more discussion in the 
+supplements, the results are essentially identical to those presented below. As 
+an additional experiment, the numerical simulations have been run using an 
+invariant per-event displacement of 1 m. Though this is not a realistic 
+scenario, it allows for a deconvolution of the effects of earthquake time 
+stochasticity and earthquake displacement stochasticity. The results are shown 
+in Figure S3 and Table S2, and discussed in the supplemental materials; there 
+are noticeable differences in the results, but they are quite small and do not 
+call into question the results and conclusions presented below.
 
 
 
@@ -362,11 +369,11 @@ reach 2,000,000 years.
 The displacement histories in Figure \ref{disp_histories} clearly show
 that given the stochastic nature of the samples, the cumulative
 displacements can diverge greatly from the mean. The magnitude of this
-divergence appears to be related to the \(COV\) of the recurrence
-interval distributions: The clustered series (\(COV\) = 2) has by far
+divergence appears to be related to the \(CV\) of the recurrence
+interval distributions: The clustered series (\(CV\) = 2) has by far
 the most divergence, both unclustered series (lognormal and exponential
-with \(COV\) = 1) behave qualitatively similarly, and the periodic
-series (\(COV\) = 0.5) tracks most closely with the mean. The
+with \(CV\) = 1) behave qualitatively similarly, and the periodic
+series (\(CV\) = 0.5) tracks most closely with the mean. The
 divergences from the mean are driven by successive closely-spaced
 earthquakes, perhaps with high displacements, or by long durations of
 quiescence. The clustered series in particular shows a pattern of many
@@ -387,15 +394,17 @@ Furthermore, the magnitude of displacement is independent of the
 corresponding recurrence interval. It is currently unknown to what
 degree autocorrelation exists in real earthquake time and displacement
 series, or how much correlation is present between recurrence intervals
-and subsequent displacements. The former is essentially unstudied,
+and subsequent displacements. Autocorrelation in recurrence interval sequences 
+is essentially unstudied,
 though on the basis of preliminary, unreviewed analysis
 \citep{styron_survival_2017}, I suspect that it is as important as
-\(COV\). With respect to the latter, the framework of elastic rebound
+\(CV\). With respect to the amount of slip per event and loading time, the 
+framework of elastic rebound
 theory in its most basic form should predict some correspondence between
 inter-event (loading) duration and slip magnitude, and this is included
 (implicitly or explicitly) in oscillator models incorporating complete
 stress or strain release in each earthquake\\
-\citep[e.g.]{matthews_brownian_2002,dicaprio_post-seismic_2008} or in
+\citep[e.g.,][]{matthews_brownian_2002,dicaprio_post-seismic_2008} or in
 any model where coseismic friction drops to zero, as this is
 functionally equivalent (because \(f^a = \tau^a_s / \tau^a_n\), where
 \(f^a\), \(\tau^a_s\) and \(\tau^a_n\) are respectively friction at
@@ -519,7 +528,7 @@ rates}\label{interpreting-measured-rates}
 
 The most pragmatic motivation for this study is to understand how much
 \emph{epistemic} uncertainty in a slip rate measurement results from the
-\emph{aleatoric} uncertainty (or natural variability) in earthquake
+\emph{aleatoric} (or natural) variability in earthquake
 recurrence. However, the previous results have focused on describing the
 natural variability, and how much a measured rate may deviate from the
 `true' secular rate, i.e. \(\hat{R}/R\). In these methods and results,
@@ -568,8 +577,8 @@ whether fault slip rates may have changed over some time period, or
 between multiple sets of measurements. From a theoretical perspective,
 understanding under what conditions fault slip rates change can lead to
 much insight into fault processes such as growth
-\citep[e.g.]{roberts_fault_2002} and interaction
-\citep[e.g.]{wallace_grouping_1987,dolan_long-range_2007}. Practically,
+\citep[e.g.,][]{roberts_fault_2002} and interaction
+\citep[e.g.,][]{wallace_grouping_1987,dolan_long-range_2007}. Practically,
 if an older (or longer-term) slip rate is quite different from the
 contemporary rate, then its inclusion in a seismic hazard model may lead
 to inaccurate hazard estimation.
@@ -588,7 +597,7 @@ due to natural variability, requires consideration of the lengths of
 time over which the different slip rate measurements were made and the
 associated uncertainty. If the distributions defined by two estimates
 \(\hat{R_1}\) and \(\hat{R_2}\) and their empirical distributions
-(reflecting the number of earthquakes as well as the \(COV\)s of the
+(reflecting the number of earthquakes as well as the \(CV\)s of the
 underlying earthquake recurrence distributions are known, then the null
 hypothesis that the two slip rates are drawn from the same stationary
 distribution can be tested with a Kolmogorov-Smirnov test.
@@ -611,8 +620,8 @@ behavior of a given fault.
 
 \conclusions
 
-This work seeks to evaluate the effect of natural variability (aleatoric
-uncertainty) in earthquake recurrence intervals on slip rate
+This work seeks to evaluate the effect of natural (aleatoric) variability in 
+earthquake recurrence intervals on slip rate
 measurements. The study simulates cumulative displacement during
 2,000,000 earthquakes for a faults with stationary long-term slip rates
 of 1 mm/yr and several different distributions for earthquake
@@ -631,13 +640,13 @@ measurement time windows or techniques:
   following \textasciitilde{}10-20 earthquakes.
 \item
   The most important factor in controlling the variability in slip rate
-  estimates is the coefficient of variation (\(COV\)); the different
+  estimates is the coefficient of variation (\(CV\)); the different
   distributions themselves are relatively unimportant. Faults with
-  \emph{periodic} earthquakes, with \(COV < 1\), have less initial
+  \emph{periodic} earthquakes, with \(CV < 1\), have less initial
   variability, and stabilize rapidly. Faults with \emph{unclustered}
-  earthquakes, with \(COV = 1\), have more variability and stabilize
+  earthquakes, with \(CV = 1\), have more variability and stabilize
   more slowly. Faults with \emph{clustered} earthquakes,\\
-  with \(COV > 1\), have a great amount of initial variability and
+  with \(CV > 1\), have a great amount of initial variability and
   require a large number of earthquakes to stabilize.
 \item
   The epistemic uncertainties around a measured slip rate are similarly
@@ -726,27 +735,29 @@ license.}
 \begin{table}[t]
 \begin{tabular}{lllllll}
 \tophline
-distribution  &  $t$     &     5  &     25 &     50 &    75 &   95 \\
+distribution  &  $t$     &     5\%  &   25\% &    50\% &   75\% &  95\% \\
 \middlehline
-logn\_0.5 & 2531  &  0.51 &  0.79 &  1.13 &  1.77 &  4.37 \\
+lognormal (CV=0.5) & 2531  &  0.51 &  0.79 &  1.13 &  1.77 &  4.37 \\
       & 4843  &  0.61 &  0.84 &  1.08 &  1.46 &  2.44 \\
       & 10,323 &   0.7 &  0.89 &  1.04 &  1.27 &  1.84 \\
       & 42,103 &  0.83 &  0.96 &  1.04 &  1.12 &  1.27 \\
-logn\_1 & 2531  &  0.42 &  0.71 &  1.14 &  2.25 &   $\infty$ \\
+lognormal (CV=1) & 2531  &  0.42 &  0.71 &  1.14 &  2.25 &   $\infty$ \\
       & 4843  &  0.51 &  0.75 &  1.07 &  1.67 &  5.62 \\
       & 10,323 &   0.6 &  0.82 &  1.04 &  1.38 &  2.55 \\
       & 42,103 &  0.72 &  0.89 &  1.03 &  1.18 &  1.55 \\
-logn\_2 & 2531  &  0.35 &  0.68 &  1.35 &   $\infty$ &   $\infty$ \\
+lognormal (CV=2) & 2531  &  0.35 &  0.68 &  1.35 &   $\infty$ &   $\infty$ \\
       & 4843  &  0.43 &   0.7 &  1.16 &  2.86 &   $\infty$ \\
       & 10,323 &  0.51 &  0.75 &  1.07 &  1.66 &   $\infty$ \\
       & 42,103 &   0.7 &  0.83 &  0.98 &  1.28 &  4.75 \\
-exp\_1 & 2531  &   0.4 &   0.7 &  1.17 &  2.39 &   $\infty$ \\
+exponential (CV=1) & 2531  &   0.4 &   0.7 &  1.17 &  2.39 &   $\infty$ \\
       & 4843  &  0.49 &  0.75 &  1.08 &  1.67 &  4.79 \\
       & 10,323 &  0.61 &   0.8 &  1.03 &  1.37 &  2.32 \\
       & 42,103 &  0.76 &  0.89 &     1 &  1.15 &  1.43 \\
- \bottomhline
+\bottomhline
 \end{tabular}
-  \caption{Epistemic uncertainty table \label{ep_unc_table}}
+  \caption{Epistemic uncertainty tabl, showing the percentiles for the 
+    slip-rate variability (in mm yr$^{-1}$) at each time $t$ (years). The 
+    long-term mean slip rate is 1 mm yr$^{-1}$. \label{ep_unc_table}}
 \end{table}
 
 
