@@ -151,7 +151,7 @@ physical mechanisms behind aleatory recurrence variability.*
 I have added a short discussion (two paragraphs) on the topic, but as noted in 
 my response to [O4] I don't think that a more full discussion is warranted. I 
 want this paper to be a simple, easy-to-digest paper and I think that a long 
-and necessarily unsatisfying (as we don't have answers yet) discussion on the 
+and necessarily unsatisfying discussion (as we don't have answers yet) on the 
 mechanisms behind recurrence variability will be an obstacle, and many readers 
 will just put the paper down.
 
@@ -601,3 +601,355 @@ easily interpretable. I have made some minor changes to the sentence structure
 for clarification
 
 *Changes: Paragraph edits.*
+
+
+## Review by Anonymous #2
+
+> [B1] Uncertainty in estimates of earthquake recurrence and fault slip rate are
+> important parameters, pursued by conscientious investigators of seismic
+> hazard. The author perceives a lack of statistical support, and offers in
+> this paper “insights” in variously tones of “friend of the practitioner” and
+> “trust me, I’m the numerate one here”. Neither is convincing.
+
+Someone's grumpy!
+
+Since this review seems to aim to shame rather than help, the number of changes
+are few. 
+
+> [B2a] A couple of omissions in this paper are particularly striking.
+
+> [B2b] First, how do we have a paper addressed to “variability” in fault
+> slip rate, addressing particularly the problem of small samples, without
+> mentioning the methods of estimation for censored samples? There is an
+> extensive statistical literature to estimate parameters and uncertainties and
+> numerous recent papers applying it in paleoseismic contexts. This literature
+> provides real quantitative methods to deal with the open intervals, long or
+> short, that affect the geologist’s estimate of fault slip rate and recurrence
+> estimation. These are real equations, with real uncertainties. One would look
+> in vain in this paper for anything of similar substance.
+
+Open intervals and censoring are of course well trodden ground in the
+application of statistics to any field.
+
+However, much of the variability that this paper is concerned with is present
+within the closed intervals themselves. Open intervals 
+
+I don't disagree that more substance is offered by methods developed through the
+decades by many researchers than I can offer in one short paper. Sorry!
+
+
+> [B2c] Second, pages of this paper could be replaced (and improved) by a
+> presentation and discussion of the properties of the standard error. E.g.,
+> given an estimate a sample- based estimate of the mean, how far might the
+> population (or true) mean be from the estimate? S.E. is estimated by the
+> sample standard deviation divided by the square root of the number of
+> samples. So, of course, estimates from small samples from a fuzzy log normal
+> converge more slowly than from a well-defined (quasi-periodic) lognormal.
+> Instead of a small equation (SE=s/sqrt(n)), our paper back-calculates the
+> result using 2 million years of samples, and presents the results like a new
+> discovery . And again, with little by way of meaningful uncertainties (e.g.,
+> p1, lines 11- 13, 14- 16).
+
+The standard error of the mean is irrelevant because slip rates are not
+generally derived by taking the mean of independently-measured per-earthquake
+offsets and recurrence intervals. They are typically derived by dividing net
+offset over net time (including or excluding open intervals as one wishes in
+paleoseismology, but never in neotectonics). Furthermore, with neotectonic slip
+rate estimates, $n$ is not known.
+
+It would be different if this paper was at all concerned with the calculation of
+recurrence intervals, per-event displacements, or other parameters of individual
+earthquakes where a number of samples 
+
+
+> [B3] 1 L 9,10: We read that the most important parameter is the coefficient of
+>  variation. First, this equation is the arithmetic coefficient of variation,
+>  and not the CV for a lognormal distribution. The CV of a lognormal does not
+>  depend on the mean. 
+
+The reviewer is really confused about the lognormal distribution (see [B6] and
+[B7] where the reviewer continues to make mistakes and level false accusations
+at me).
+
+I was quite worried that I made a mistake after reading this, so I re-checked
+my math, my code and re-read a range of references (e.g., *Statistical
+Distributions* by Evans, Hastings and Peacock, 1993; *Confidence Intervals
+for the Coefficent of Variation for the Normal and Lognormal Distributions*,
+Koopmans, Owen, and Rosenblatt, *Biometrika*, v. 51, no. 1/2, 1964, as well
+as a lot of internet pages). Nowhere do I find alternative definitions of the
+$CV$ for a lognormal distribution, except in the Wikipedia page for
+Coefficient of Variation where two conflicting definitions for the Geometric
+Coefficient of Variation are given. Both of these involve estimating the $CV$
+from samples rather than as an algebraic transformation of the equations for
+a lognormal distribution. The first definition is mathematically the same as
+the standard definition; the difference lies in whether the estimation
+procedure is done on the raw data or log-transformed data. The second is
+simply the square of the first.
+
+Just to reiterate, the arithmetic coefficient of variation for the lognormal
+distribution is the standard definition.
+
+The reviewer's confusion may stem from the fact that there are two equations
+for the coefficient of variation that get regularly passed around. However, as I
+demonstrate in the response to [B7c], they are mathematically equivalent. The
+simple definition, which I use in the paper, is $CV = \frac{\sigma}{\mu}$,
+where $\sigma$ and $\mu$ are the standard deviation and mean of the
+distribution. The other definition, $CV=\sqrt{e^{\phi^2}-1}$, is given in
+terms of the standard deviation $\phi$ of the natural log of the lognormal
+distribution.
+
+OK, this is pretty funny: All of the confusion that the reviewer has about the
+lognormal distribution appears to be because of a misreading of the
+Wikipedia pages for the lognormal distribution and for the coefficient of
+variation. I mentioned the geometric CV (non-)issue above.  The quip that the
+'CV of a lognormal does not depend on the mean' is... kind of true? As demonstrated in the response to [B7c], the standard deviation is a
+*function of the mean* in that the mean is a coefficient of the standard
+deviation. Therefore $CV = \sigma / \mu = \mu \Alpha /\mu$ where $\Alpha$ is
+another mathematical expression (see [B7c]). So, yes, technically it is true but
+only because it's on the top and the bottom of the fraction; furthermore, you
+can't derive the expression $A$ without knowing both $\mu$ and $\sigma$.
+Regardless, the quip gives all outward appearance of being a slight modification
+of the sentence "Contrary to the arithmetic standard deviation, the arithmetic
+coefficient of variation is independent of the arithmetic mean" which is below
+the equation for the $CV$ of a lognormal on the Wikipedia page.  It is not a
+statement that makes any practical sense unless one is beginning with
+log-transformed data or distributions.
+
+So to conclude, my math, code and analysis are sound in terms of the use of the
+$CV$.
+
+*No changes.*
+
+
+> [B4] We could stop here, but a central flaw in the paper is exposed – nothing
+> in this paper addresses how to obtain this most important parameter. If
+> attempted, the essential emptiness of a 2,000,000 year sample would emerge. No
+> real data set in paleoseismology resolves the mean and standard deviation to
+> better than maybe 50%. Typical sites do well to resolve it to a factor of 2.
+> P.3, line 22- 23 reflect this reality.
+
+"the essential emptiness"... I'm surprised, and perhaps a bit concerned, to
+find that I have tapped into the existential despair of Anonymous Reviewer #2.
+
+This study investigates how slip rates measured as *offset / time* of an offset
+marker are influenced by earthquake cycle variation. It is not a paper that
+discusses the finer points of calculating the mean and standard deviation of
+earthquake recurrence intervals or displacements from paleoseismology. Indeed,
+given that "There is an extensive literature..." [B2b] on this topic, why should
+I rehash it?
+
+I fully agree that a typical paleoseismological study cannot resolve the mean
+and standard deviation with a high degree of accuracy and I never stated
+otherwise. Partly for this reason, by using CVs of 0.5, 1, and 2, I cover a
+pretty wide range of values that can give some idea of the expected behavior of
+the system under 
+
+
+
+> [B5a] It is not  obvious that the author has material experience words
+> “aleatoric” and “epistemic”. Line 1, “aleatoric uncertainty” is a
+> contradiction in terms.
+
+It's really not a contradiciton in terms. 'Aleatory' does not mean 'the absence
+of uncertainty', which it would have to in order to contradict the term
+'uncertainty'. 
+
+
+
+
+Nonetheless 
+
+
+O'Hagan, T. (2004). Dicing with the unknown. *Significance*, 1(3), 132-133.
+
+
+> [B5b] Bird, Zechar and Frankel all know better than to use the method the
+> author alleges in lines 21 and 22 to arrive at epistemic uncertainty in slip
+> rate.  They would more likely consider the allegation a misreading of their
+> work.
+
+This is a very perplexing comment. The line in question states, "The
+uncertainty in the resulting slip estimate is typically treated as epistemic,
+and quantified through the propagation of the measurement uncertainties on
+the offset and time quantities (e.g., Bird, 2007; Zechar and Frankel, 2009)."
+Both of the papers referenced are focused on estimating fault slip rates (or
+*long-term offset rates* in Bird's terminology) that incorporate the measurement
+uncertainty in both age and offset measurements. Both of their methods are based
+in a convolution of the probability distributions for age and offset of the
+marker features (i.e., the data with their uncertainties).
+
+
+
+> [B5c] More broadly, the lack of care in writing makes one wonder how to
+> understand this paper.
+
+Sorry!
+
+> [B5d] p2, L5:  A perturbation in slip rate would mean it was
+> slipping at rate X, then changes to Y.
+
+Yes.  This is both the intended and the obvious interpretation of the sentence.
+
+*No changes.*
+
+> [B5e] p.2, L14-17 have careful paleoseismologists doing reasonable things in
+> one sentence, then imply they would make plainly rookie mistakes in the next.
+
+The paragraph in question states that the open interval since the last
+earthquake is often taken into consideration, however the variability in closed
+intervals is not nearly as often taken into consideration--this is why I have
+written the paper. Should I not state that paleoseismologists and
+neotectonicists who consider the effects of the terminal open interval are
+careful? I don't feel like being less generous. Should I not point out that
+variability within the closed intervals is important and rarely considered?  No,
+I think that I should.
+
+*No changes.*
+
+> [B5f] From here these read like inexperienced generalizations.
+
+Sorry!
+
+*No changes.*
+
+> [B6a] p.4, L15-23: The descriptions of the lognormal variables here give one
+> pause. First, log-normal parameters do not have units.
+
+This comment is completely off the mark. The shape and scale parameters of a
+lognormal distribution are indeed unitless, as they are the mean and standard
+deviation of $\ln L$, where $L$ is a lognormal distribution (this transforms the
+lognormal distribution into a normal distribution). However, the mean and
+standard deviation of the actual lognormal distribution $L$ are in the units of
+the distribution itself.  Nowhere in the manuscript did I state that $\mu$ and
+$\sigma$, which are clearly defined as the mean and standard deviation of any
+distribution in question, are the shape and scale parameters of $L$.  They are
+simply the mean and standard deviation of it.
+
+I have added a footnote clarifying this and giving the derivation of the shape
+and scale parameters from the mean and standard deviation.
+
+*Changes: Footnote with explanation and equations added.*
+
+
+> [B7b] Second, the mean recurrence interval is not the location parameter of
+> a log normal. This is just wrong. 
+
+Nowhere in the manuscript did I state this. In fact, the word 'location' is not
+present anywhere in the submitted manuscript (it has been added to an expanded
+discussion of probability distributions and their parameters in the revised
+manuscript as described in the response to Comment [O14], though I still do not
+make the mistake that I have been accused of).
+
+Furthermore, the lognormal distribution doesn't have a location parameter--it is
+a 2-parameter distribution specified by shape and scale parameters, as stated in
+P. 3, L. 24 of the submitted manuscript.
+
+*No changes.*
+
+> [B7c] Third, if one uses the CV equation for the lognormal distribution (e.g.,
+> https://en.wikipedia.org/wiki/Log-normal_distribution#Arithmetic_coefficient_of_variation),
+> the CV will not match the COV alleged here. Given that the study depends on
+> these distributions, we can’t really use subsequent conclusions.
+
+This is false. The equations are mathematically equivalent.
+
+The mean $\mu$ of a lognormal distribution $L$ is often given in terms of the
+mean $m$ and standard deviation $\phi$ of the log-transformed distribution 
+$\ln L$, which is a normal distribution. The equation is:
+
+$$\mu = e^{m + \frac{1}{2} \phi^2 }$$
+
+and similarly, the standard deviation $\sigma$ of $L$ may be given in terms of
+$m$ and $\phi$:
+
+$$\sigma = e^{m + \frac{1}{2} \phi^2} \sqrt{ e^{\phi^2} -1}\,,$$
+
+which is clearly equivalent to
+
+$$ \sigma = \mu \sqrt{ e^{\phi^2}-1}\,.$$
+
+Therefore, 
+
+$$ CV = \frac{\sigma}{\mu} = \frac{\mu \sqrt{e^{\phi^2}-1}}{\mu} =
+\sqrt{e^{\phi^2}-1}$$
+
+which is the equation for the $CV$ of a lognormal distribution given in any
+source including the Wikipedia page.  Please note that in most sources, the
+symbols '$\mu$' and $\sigma$' are what I have here defined as '$m$' and '$\phi$'
+because I use the symbols $\mu$ and $\sigma$ to represent the mean and standard
+deviation of $L$, consistent with the manuscript where the same symbols are used
+equivalently across distributions.
+
+The methods and results of this study are consistent and this alleged error did
+not occur.
+
+*No changes.*
+
+
+> [B7] p.6, L20.  If the number of samples is really n = N – t + 1, the samples
+> are correlated by virtue of the overlap in the windows.  No accounting has
+> been made of the correlation structure.
+
+There is certainly a lot of autocorrelation of the samples if one were to
+look at them sequentially. Nonetheless, even if sequential samples are
+correlated, given enough samples, the final distribution of the samples won't
+depend on the autocorrelation in the samples (this principle underlies the
+family of powerful and commonly-used numerical methods based on Markov Chain
+Monte Carlo sampling, for instance). This is why I use 2,000,000 years of
+simulation: it ensures that the sampling is ample enough to not worry that
+the serially-correlated samples have not sufficiently sampled the
+distribution. I would have to use a much longer simulation (tens to hundreds
+of millions of years) otherwise.
+
+
+
+
+> [B8a] p.6, L26:  Starts a narrative of the consequences of the standard error,
+> as though the standard error was never invented.
+
+Again, the standard error is not applicable here because slip rates estimations
+as used in this study are not made by taking the mean and standard deviation of
+sets of measurements:  As laid out in 
+
+
+> [B8b] The fuzzy, back-of-the-envelope estimates start to get thick here. Real
+> uncertainty estimates would serve better.
+
+This is kept fuzzy because it's not possible to know the recurrence or offset distribtions
+
+
+
+
+
+> [B9a] p.7, L1-3: Two observations: First, as written, the practicing
+> geologist is being asked to believe that 60 earthquake cycles have passed
+> with zero displacement. I can guess what was intended, but should not have to.
+
+Actually, the naive reading of the sentence, that 60 *mean* earthquake cycles
+can occur without displacement on a fault, is exactly what is intended.
+
+The practicing geologist is probably familiar with intraplate faults in
+environments with low strain rates. 
+
+> [B9b] Second, what probability is associated with this 60-cycle thing?  I ask
+> because practicing hazard geologists have to make estimates, and give weights
+> to extreme events.  What is the probability of 60 cycles, a CV of 2.0, ...?
+> Hard to imagine that the author  has thought much about what these results
+> would mean or how to use them if they were true.
+
+I happen to be a practicing hazard geologist who is responsible for the
+implementation of fault sources for probabilistic seismic hazard analysis, so
+I have actually considered this
+
+There are two probabilities here:
+1. The probability of a fault with a CV of 2.0 going 60 mean earthquake cycles
+   without accruing much displacement. This one is pretty easy to answer just 
+
+2. The probability of a fault having a CV of 2.0.  This is a goodFault 1 has a
+   slip rate of 1 mm/yr, and Fault 2 has a slip rate of 0.1 mm/yr. If I think of
+   nt of data. 
+
+So what should the practicing geologist do here? Well, that all depends on the
+assumptions involved in the creation of the seismic source model. The first
+thing to do i  The first thing 
+to do i

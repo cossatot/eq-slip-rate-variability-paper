@@ -263,12 +263,12 @@ with propriety, the safest and probably most correct assumption is that
 it is context-dependent. Many studies of plate boundary faults such as
 the San Andreas conclude that major or `characteristic' earthquakes are
 periodic\\
-\citep[e.g.,][]{berryman_major_2012,scharer_quasi-periodic_2010}.
+\citep[e.g.,][]{berryman_major_2012, scharer_quasi-periodic_2010}.
 Conversely, many intraplate faults with low slip rates appear to show
 clustered earthquakes separated by long intervals of seismic quiescence
 \citep[e.g.,][]{clark_long-term_2012}. However, one can find examples of
 studies indicating the opposite conclusions
-\citep{tuttle_earthquake_2002,grant_paleoseismic_1994}.
+\citep{tuttle_earthquake_2002, grant_paleoseismic_1994}.
 
 \subsubsection{Modeled recurrence interval
 distributions}\label{modeled-recurrence-interval-distributions}
@@ -281,7 +281,15 @@ This study will compare four recurrence interval distributions (Figure
 \item
   A \emph{periodic} distribution, represented by a lognormal
   distribution with a mean recurrence interval \(\mu\) = 1000 years, and
-  a standard deviation \(\sigma\) = 500 years, and a \(CV\) = 0.5.
+  a standard deviation \(\sigma\) = 500 years, and a \(CV\) =
+  0.5 \footnote{Please note that $\mu$ and $\sigma$ do not represent the scale
+  and shape parameters of the lognormal distribution, though these symbols are
+  commonly used to represent these parameters, as the scale and shape parameters
+  of a lognormal distribution $L$ are the standard deviation and mean of the
+  normal distribution $\ln L$. Instead, the shape parameter $sh$
+  and scale parameter $sc$ are derived from $\mu$ and $\sigma$ through the
+  relations $sh = \sqrt{1 + \sigma^2 / \mu^2}$ and 
+  $sc = \ln [ \mu / \sqrt{1 + \sigma^2 / \mu^2}]$.}
 \item
   An \emph{unclustered} time-dependent distribution, represented by a
   lognormal distribution with a mean recurrence interval \(\mu\) = 1000

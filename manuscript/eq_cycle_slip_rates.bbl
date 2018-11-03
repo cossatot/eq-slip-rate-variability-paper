@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -27,10 +27,26 @@ Berryman, K.~R., Cochran, U.~A., Clark, K.~J., Biasi, G.~P., Langridge, R.~M.,
   \urlprefix\url{http://science.sciencemag.org.www2.lib.ku.edu/content/336/6089/1690},
   2012.
 
+\bibitem[{Biasi and Weldon(2006)}]{biasi_estimating_2006}
+Biasi, G.~P. and Weldon, R.~J.: Estimating {Surface} {Rupture} {Length} and
+  {Magnitude} of {Paleoearthquakes} from {Point} {Measurements} of {Rupture}
+  {Displacement}, Bulletin of the Seismological Society of America, 96,
+  1612--1623, \doi{10.1785/0120040172},
+  \urlprefix\url{http://www.bssaonline.org/cgi/doi/10.1785/0120040172}, 2006.
+
 \bibitem[{Bird(2007)}]{bird_uncertainties_2007}
 Bird, P.: Uncertainties in long-term geologic offset rates of faults: {General}
   principles illustrated with data from {California} and other western states,
   Geosphere, 3, 577--595, 2007.
+
+\bibitem[{Chéry et~al.(2001)Chéry, Carretier, and
+  Ritz}]{chery_postseismic_2001}
+Chéry, J., Carretier, S., and Ritz, J.-F.: Postseismic stress transfer
+  explains time clustering of large earthquakes in {Mongolia}, Earth and
+  Planetary Science Letters, 194, 277--286,
+  \doi{10.1016/S0012-821X(01)00552-0},
+  \urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0012821X01005520},
+  2001.
 
 \bibitem[{Clark et~al.(2012)Clark, McPherson, and
   Van~Dissen}]{clark_long-term_2012}
@@ -45,6 +61,14 @@ Davis, P.~M., Jackson, D.~D., and Kagan, Y.~Y.: The longer it has been since
   the last earthquake, the longer the expected time till the next?, Bulletin of
   the Seismological Society of America, 79, 1439--1456,
   \urlprefix\url{http://www.bssaonline.org/content/79/5/1439.short}, 1989.
+
+\bibitem[{DeMets and Dixon(1999)}]{demets_new_1999}
+DeMets, C. and Dixon, T.~H.: New kinematic models for {Pacific}-{North}
+  {America} motion from 3 {Ma} to present, {I}: {Evidence} for steady motion
+  and biases in the {NUVEL}-1A {Model}, Geophysical Research Letters, 26,
+  1921--1924, \doi{10.1029/1999GL900405},
+  \urlprefix\url{http://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/1999GL900405},
+  1999.
 
 \bibitem[{DiCaprio et~al.(2008)DiCaprio, Simons, Kenner, and
   Williams}]{dicaprio_post-seismic_2008}
@@ -68,11 +92,36 @@ DuRoss, C.~B.: Holocene {Vertical} {Displacement} on the {Central} {Segments}
   \urlprefix\url{https://pubs.geoscienceworld.org/bssa/article/98/6/2918-2933/342041},
   2008.
 
+\bibitem[{Gomberg and Johnson(2005)}]{gomberg_dynamic_2005}
+Gomberg, J. and Johnson, P.: Dynamic triggering of earthquakes: {Seismology},
+  Nature, 437, 830--830, \doi{10.1038/437830a},
+  \urlprefix\url{http://www.nature.com/articles/437830a}, 2005.
+
+\bibitem[{Gomberg et~al.(2005)Gomberg, Belardinelli, Cocco, and
+  Reasenberg}]{gomberg_time-dependent_2005}
+Gomberg, J., Belardinelli, M.~E., Cocco, M., and Reasenberg, P.: Time-dependent
+  earthquake probabilities, Journal of Geophysical Research, 110,
+  \doi{10.1029/2004JB003405},
+  \urlprefix\url{http://doi.wiley.com/10.1029/2004JB003405}, 2005.
+
 \bibitem[{Grant and Sieh(1994)}]{grant_paleoseismic_1994}
 Grant, L.~B. and Sieh, K.: Paleoseismic evidence of clustered earthquakes on
   the {San} {Andreas} {Fault} in the {Carrizo} {Plain}, {California}, Journal
   of Geophysical Research, 99, 6819, \doi{10.1029/94JB00125},
   \urlprefix\url{http://doi.wiley.com/10.1029/94JB00125}, 1994.
+
+\bibitem[{Hetland and Hager(2006)}]{hetland_interseismic_2006}
+Hetland, E.~A. and Hager, B.~H.: Interseismic strain accumulation: {Spin}-up,
+  cycle invariance, and irregular rupture sequences, Geochemistry, Geophysics,
+  Geosystems, 7, n/a--n/a, \doi{10.1029/2005GC001087},
+  \urlprefix\url{http://doi.wiley.com/10.1029/2005GC001087}, 2006.
+
+\bibitem[{King et~al.(1994)King, Stein, and Lin}]{king_static_1994}
+King, G. C.~P., Stein, R.~S., and Lin, J.: Static stress changes and the
+  triggering of earthquakes, Bulletin of the Seismological Society of America,
+  84, 935--953,
+  \urlprefix\url{http://pubs.geoscienceworld.org/ssa/bssa/article/84/3/935/102745/static-stress-changes-and-the-triggering-of},
+  1994.
 
 \bibitem[{Klinger et~al.(2011)Klinger, Etchebes, Tapponnier, and
   Narteau}]{klinger_characteristic_2011}
@@ -143,6 +192,15 @@ Scharer, K.~M., Biasi, G.~P., Weldon, R.~J., and Fumal, T.~E.: Quasi-periodic
   recurrence of large earthquakes on the southern {San} {Andreas} fault,
   Geology, 38, 555--558,
   \urlprefix\url{http://geology.gsapubs.org/content/38/6/555.short}, 2010.
+
+\bibitem[{Steacy et~al.(2005)Steacy, Gomberg, and
+  Cocco}]{steacy_introduction_2005}
+Steacy, S., Gomberg, J., and Cocco, M.: Introduction to special section:
+  {Stress} transfer, earthquake triggering, and time-dependent seismic hazard,
+  Journal of Geophysical Research: Solid Earth, 110,
+  \doi{10.1029/2005JB003692},
+  \urlprefix\url{http://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2005JB003692},
+  2005.
 
 \bibitem[{Styron et~al.(2017)Styron, Sherrod, Scharer, Rao, Gee, and
   Pagani}]{styron_survival_2017}
