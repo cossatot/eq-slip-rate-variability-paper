@@ -80,7 +80,7 @@ def make_cum_slip(rec_mean, rec_std, distribution, yrs=10000,
     
     cum_slip = np.cumsum(eq_slip)
     
-    return cum_slip
+    return eq_rec_times, cum_slip
 
 
 def moving_average_rate(cum_disp, window, scale='mm/yr'):

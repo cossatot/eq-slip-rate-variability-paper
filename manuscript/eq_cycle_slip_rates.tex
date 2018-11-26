@@ -394,38 +394,36 @@ great asymmetry of this distribution (Figure \ref{eq_rec_dists}), with
 the very short mode and `fat' right tail.
 
 Please note that in the construction of the cumulative displacement
-histories, all samples are independent. This means that the duration of
-any recurrence interval does not depend on the duration of the previous
-or subsequent interval (in other words, there is no autocorrelation in
-these series); the same applies to the displacement samples.
-Furthermore, the magnitude of displacement is independent of the
-corresponding recurrence interval. It is currently unknown to what
-degree autocorrelation exists in real earthquake time and displacement
-series, or how much correlation is present between recurrence intervals
-and subsequent displacements. Autocorrelation in recurrence interval sequences 
-is essentially unstudied,
+histories, all samples are independent. This means that the duration of any
+recurrence interval does not depend on the duration of the previous or
+subsequent interval (in other words, there is no autocorrelation in these
+series); the same applies to the displacement samples. Furthermore, the
+magnitude of displacement is independent of the corresponding recurrence
+interval. It is currently unknown to what degree autocorrelation exists in
+real earthquake time and displacement series, or how much correlation is
+present between recurrence intervals and subsequent displacements.
+Autocorrelation in recurrence interval sequences is essentially unstudied,
 though on the basis of preliminary, unreviewed analysis
-\citep{styron_survival_2017}, I suspect that it is as important as
-\(CV\). With respect to the amount of slip per event and loading time, the 
-framework of elastic rebound
-theory in its most basic form should predict some correspondence between
-inter-event (loading) duration and slip magnitude, and this is included
-(implicitly or explicitly) in oscillator models incorporating complete
-stress or strain release in each earthquake\\
-\citep[e.g.,][]{matthews_brownian_2002,dicaprio_post-seismic_2008} or in
-any model where coseismic friction drops to zero, as this is
-functionally equivalent (because \(f^a = \tau^a_s / \tau^a_n\), where
-\(f^a\), \(\tau^a_s\) and \(\tau^a_n\) are respectively friction at
-rupture arrest, shear stress at rupture arrest, and effective normal
-stress at rupture arrest, zero friction implies zero shear stress, or
-complete stress drop). Given a reasonably constant loading rate,
-complete shear stress or strain release implies some proportionality
-between the loading time and displacement. Nonetheless, this
-correspondence is not found in the more extensive paleoseismic datasets,
-such as those by \citet{benedetti_earthquake_2013} (or the correlation
-may be negative as found by \citet{weldon_wrightwood_2004}), but the
-number of paleoseismic datasets of sufficient size and quantity to
-identify these effects with statistical significance are few indeed.
+\citep{styron_survival_2017}, I suspect that it is as important as \(CV\).
+With respect to the amount of slip per event and loading time, the framework
+of elastic rebound theory in its most basic form should predict some
+correspondence between inter-event (loading) duration and slip magnitude, and
+this is included (implicitly or explicitly) in oscillator models
+incorporating complete stress or strain release in each earthquake
+\citep[e.g.,][]{matthews_brownian_2002,dicaprio_post-seismic_2008} or in any
+model where coseismic friction drops to zero, as this is functionally
+equivalent (because \(f^a = \tau^a_s / \tau^a_n\), where \(f^a\),
+\(\tau^a_s\) and \(\tau^a_n\) are respectively friction at rupture arrest,
+shear stress at rupture arrest, and effective normal stress at rupture
+arrest, zero friction implies zero shear stress, or complete stress drop).
+Given a reasonably constant loading rate, complete shear stress or strain
+release implies some proportionality between the loading time and
+displacement. Nonetheless, this correspondence is not found in the more
+extensive paleoseismic datasets, such as those by
+\citet{benedetti_earthquake_2013} (or the correlation may be negative as
+found by \citet{weldon_wrightwood_2004}), but the number of paleoseismic
+datasets of sufficient size and cquality to identify these effects with
+statistical significance are few indeed.
 
 Because this modeling strategy involves sampling independence, it is
 essentially a neutral model. If any correlation structure exists in the
@@ -447,41 +445,44 @@ The uncertainty in the estimated slip rates due to earthquake cycle
 variability is estimated by taking a function, \(\hat{R}\), that
 calculates the mean slip rate within a time window \(t\), and sliding it
 along the displacement series. \(\hat{R}\) is calculated simply as
-
 \begin{equation}
   \hat{R}(D_0,D_1,t) = \frac{D_1 - D_0}{t}\; ,
   \label{eqn-rate-calc}
 \end{equation}
-
 where \(D_0\) is the cumulative displacement at the beginning of the
 time window, \(D_1\) is the cumulative displacement at the end of the
 time window, and \(t\) is the length of the time window. The \(\hat{}\)
-symbol signifies an estimate rather than the true value \(R\). By
-sliding \(\hat{R}\) over the displacement series, a set of many samples
-of \(\hat{R}\) is generated, so that we may analyze the distribution.
-The number of samples is \(n = N - t + 1\), where \(N\) is the length of
-the total series (2,000,000 in this study).
+symbol signifies an estimate rather than the true value \(R\). This slip rate
+estimation method is intended to represent a neotectonic-style slip rate
+estimate in which the number of earthquakes that have contributed to the
+observed deformation is unknown, as are the durations of the open intervals that
+bound the time window (one of which preceeds deposition of the marker unit, and
+one is the time since the most recent earthquake and the measurement time).
+By sliding \(\hat{R}\) over the displacement series, a set of many samples of
+\(\hat{R}\) is generated, so that we may analyze the distribution. The number
+of samples is \(n = N - t + 1\), where \(N\) is the length of the total
+series (2,000,000 in this study).
 
-A major goal of this study is to provide an answer to the question,
-\emph{How long should slip rates be measured over in order to estimate a
-meaningful rate?}\\
-This question will be answered by looking at the distribution in
-\(\hat{R}\) as a function of \(t\). Fifty values of \(t\) from 500 years
-to 100,000 years, logarithmically spaced, are used. Note that given
-\(\mu\) of 1000 years, this translates to 0.5-100 mean numbers of
-earthquakes in the window.
+A major goal of this study is to provide an answer to the question, \emph{How
+long should slip rates be measured over in order to estimate a meaningful
+rate?} This question will be answered by looking at the distribution in
+\(\hat{R}\) as a function of \(t\). Fifty values of \(t\) from 500 years to
+100,000 years, logarithmically spaced, are used. Note that given \(\mu\) of
+1000 years, this translates to 0.5-100 mean numbers of earthquakes in the
+window.
 
 The results of these calculations are shown in Figure
-\ref{slip_rate_envelopes}. It is clear that the total variability in the
-estimated slip rates is initially quite high when \(t\) is short
-(\textless{}10,000 years or \textasciitilde{}10 earthquakes).
-Particularly when \(t\) is \textless{}5,000 years, the maximum rates are
-a factor of 3 or more greater than the true rate \(R\), but the median
-rates are lower than \(R\)---this means it is more likely that fewer
-earthquakes are captured in the time window than naively expected given
-the mean recurrence. As the median is lower than \(R\), most
-measurements over these short timescales will underestimate the mean
-rate, although not necessarily by much.
+\ref{slip_rate_envelopes} for up to 60 mean earthquake cycles. It is clear
+that the total variability in the estimated slip rates is initially quite
+high when \(t\) is short (\textless{}10,000 years or \textasciitilde{}10
+earthquakes). Particularly when \(t\) is \textless{}5,000 years, the maximum
+rates are a factor of 3 or more greater than the true rate \(R\), but the
+median rates are lower than \(R\)---this means it is more likely that fewer
+earthquakes are captured in the time window than naively expected given the
+mean recurrence, and that the time contained in the open intervals is a
+substantial fraction of the total time window. As the median is lower than
+\(R\), most measurements over these short timescales will underestimate the
+mean rate, although not necessarily by much.
 
 With longer \(t\), between 10,000--20,000 years (or 10--20 earthquakes)
 the variation in the slip rate estimates stabilize to within \(\pm\)
@@ -489,10 +490,22 @@ the variation in the slip rate estimates stabilize to within \(\pm\)
 distributions, though this happens most quickly in the periodic
 distribution, and most slowly in the clustered distribution. In fact,
 the only exception here is that the lower bound of the clustered
-distribution can stay at zero for more than 60 mean earthquake cycles.
-For rate estimates longer than several tens of mean earthquake cycles,
-the variation decreases very slowly but progressively with increasing
-window length.
+distribution can stay at zero for more than 60 mean earthquake cycles. It is
+highly unlikely that any given recurrence interval will be this long, but
+given thousands of earthquakes over millions of years, the chance of such an
+event occurring at least once is far more likely. For rate estimates longer
+than several tens of mean earthquake cycles, the variation decreases very
+slowly but progressively with increasing window length.
+
+Note that with a measurement time exceeding 5-10 mean earthquake cycles, the
+standard error ($n / \sqrt{(\sigma_D^2 + \sigma_r^2)}$, where $\sigma_D$ is
+the standard deviation of displacement, and $\sigma_r$ is the standard
+deviation of the recurrence interval) is a reasonable approximation for the
+standard deviation of the variability in the slip rates due to
+earthquake-cycle stochasticity, and shows broadly similar decreasing
+variation with increasing earthquake cycles. However, the standard error is
+symmetrical, though the variability displayed here is asymmetrical due to the
+asymmetry of the recurrence interval and displacement distributions.
 
 \subsubsection{Normalizing to different slip rates and earthquake
 offsets}\label{normalizing-to-different-slip-rates-and-earthquake-offsets}
@@ -573,9 +586,11 @@ the true rate, meaning that in most cases, very short-term slip rate
 measurements will underestimate the true slip rate; this is a systematic
 bias. This is a particular concern for paleoseismological slip rate
 estimates, where there are rarely more than 5 events in any given
-trench. However, the median is less than 2 times \(\hat{R}\) following
-just 2-3 events, so the systematic bias is unlikely to be much greater
-than the measurement uncertainties on the age or offset of the events.
+trench, though this bias will be decreased if slip rate measurements are made
+from closed intervals only. However, the median is less than 2 times
+\(\hat{R}\) following just 2-3 events, so the systematic bias is unlikely to
+be much greater than the measurement uncertainties on the age or offset of
+the events.
 
 \subsection{Evaluating slip rate
 changes}\label{evaluating-slip-rate-changes}
@@ -612,7 +627,7 @@ distribution can be tested with a Kolmogorov-Smirnov test.
 
 However, it is unlikely that the values for the recurrence distributions
 and the number of earthquakes that have transpired are sufficently known
-to make the calculation, unless the fault has received sufficient
+to make the calculation, unless the fault has received in-depth
 paleoseismic and neotectonic study. As formal hypothesis testing may not
 be possible given typical slip rate datasets, an informal way of gauging
 the likelihood of a slip rate change is to crudely estimate
