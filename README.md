@@ -1,4 +1,9 @@
-#The impact of earthquake cycle variability on neotectonic and paleoseismic slip rate estimates
+The impact of earthquake cycle variability on neotectonic and paleoseismic slip rate estimates
+===
+
+
+[![DOI](https://zenodo.org/badge/131529634.svg)](https://zenodo.org/badge/latestdoi/131529634)
+
 
 This repository contains the code and the manuscript for a recent paper 
 entitled [*The impact of earthquake cycle variability on neotectonic and 
